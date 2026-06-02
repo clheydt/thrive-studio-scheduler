@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "id": "master",
+    "name": "Master",
+    "color": "#1a1a1a",
+    "isMaster": true,
+    "savedAt": "2026-06-02T19:18:32.150Z"
+  },
+  "data": {
+    "trainers": [
+      {
+        "id": "t1",
+        "name": "Ashley Mentzer",
+        "color": "#0F6E56"
+      },
+      {
+        "id": "t2",
+        "name": "Erin Dugan",
+        "color": "#185FA5"
+      },
+      {
+        "id": "t3",
+        "name": "Jamie Hund",
+        "color": "#854F0B"
+      },
+      {
+        "id": "t4",
+        "name": "Dana Sherwood",
+        "color": "#993556"
+      },
+      {
+        "id": "t5",
+        "name": "Kayla Wintermyer",
+        "color": "#534AB7"
+      },
+      {
+        "id": "t6",
+        "name": "Rotating Instructor",
+        "color": "#5F5E5A"
+      }
+    ],
+    "classTypes": [
+      {
+        "id": "ct1",
+        "code": "S",
+        "label": "Small Group"
+      },
+      {
+        "id": "ct2",
+        "code": "L",
+        "label": "Large Group"
+      },
+      {
+        "id": "ct3",
+        "code": "P",
+        "label": "Pilates"
+      }
+    ],
+    "classSchedule": [
+      {
+        "id": "cs1",
+        "recurrence": "weekly",
+        "dayOfWeek": 1,
+        "time": "06:00",
+        "classTypeId": "ct1",
+        "sessionName": "Morning Burn",
+        "location": "Studio A",
+        "active": true
+      },
+      {
+        "id": "cs2",
+        "recurrence": "weekly",
+        "dayOfWeek": 1,
+        "time": "09:00",
+        "classTypeId": "ct3",
+        "sessionName": "Morning Flow",
+        "location": "Studio B",
+        "active": true
+      },
+      {
+        "id": "cs3",
+        "recurrence": "weekly",
+        "dayOfWeek": 2,
+        "time": "18:00",
+        "classTypeId": "ct1",
+        "sessionName": "Evening Reformer",
+        "location": "Studio A",
+        "active": true
+      },
+      {
+        "id": "cs4",
+        "recurrence": "weekly",
+        "dayOfWeek": 3,
+        "time": "07:00",
+        "classTypeId": "ct2",
+        "sessionName": "Power Hour",
+        "location": "Main Floor",
+        "active": true
+      },
+      {
+        "id": "cs5",
+        "recurrence": "weekly",
+        "dayOfWeek": 3,
+        "time": "12:00",
+        "classTypeId": "ct3",
+        "sessionName": "Midday Pilates",
+        "location": "Studio B",
+        "active": true
+      },
+      {
+        "id": "cs6",
+        "recurrence": "weekly",
+        "dayOfWeek": 4,
+        "time": "18:30",
+        "classTypeId": "ct1",
+        "sessionName": "Evening Burn",
+        "location": "Studio A",
+        "active": true
+      },
+      {
+        "id": "cs7",
+        "recurrence": "weekly",
+        "dayOfWeek": 5,
+        "time": "06:00",
+        "classTypeId": "ct2",
+        "sessionName": "Friday HIIT",
+        "location": "Main Floor",
+        "active": true
+      },
+      {
+        "id": "cs8",
+        "recurrence": "weekly",
+        "dayOfWeek": 5,
+        "time": "09:30",
+        "classTypeId": "ct3",
+        "sessionName": "Weekend Warm-Up",
+        "location": "Studio B",
+        "active": true
+      },
+      {
+        "id": "cs9",
+        "recurrence": "weekly",
+        "dayOfWeek": 6,
+        "time": "08:00",
+        "classTypeId": "ct2",
+        "sessionName": "Saturday Sweat",
+        "location": "Main Floor",
+        "active": true
+      },
+      {
+        "id": "cs10",
+        "recurrence": "weekly",
+        "dayOfWeek": 6,
+        "time": "10:00",
+        "classTypeId": "ct3",
+        "sessionName": "Core & Restore",
+        "location": "Studio B",
+        "active": true
+      },
+      {
+        "id": "cs11",
+        "recurrence": "weekly",
+        "dayOfWeek": 0,
+        "time": "09:00",
+        "classTypeId": "ct3",
+        "sessionName": "Sunday Flow",
+        "location": "Studio B",
+        "active": true
+      }
+    ],
+    "staffAssignments": [
+      {
+        "id": "sa2",
+        "scheduleSlotId": "cs2",
+        "date": "2026-06-01",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa4",
+        "scheduleSlotId": "cs4",
+        "date": "2026-06-03",
+        "trainerId": "t3",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa5",
+        "scheduleSlotId": "cs7",
+        "date": "2026-06-05",
+        "trainerId": "t4",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa6",
+        "scheduleSlotId": "cs9",
+        "date": "2026-06-06",
+        "trainerId": "t6",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa7",
+        "scheduleSlotId": "cs1",
+        "date": "2026-06-08",
+        "trainerId": "t1",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa8",
+        "scheduleSlotId": "cs2",
+        "date": "2026-06-08",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa10",
+        "scheduleSlotId": "cs4",
+        "date": "2026-06-10",
+        "trainerId": "t3",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa11",
+        "scheduleSlotId": "cs7",
+        "date": "2026-06-12",
+        "trainerId": "t4",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa12",
+        "scheduleSlotId": "cs9",
+        "date": "2026-06-13",
+        "trainerId": "t6",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa13",
+        "scheduleSlotId": "cs11",
+        "date": "2026-06-14",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa14",
+        "scheduleSlotId": "cs1",
+        "date": "2026-06-15",
+        "trainerId": "t1",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa15",
+        "scheduleSlotId": "cs2",
+        "date": "2026-06-15",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa16",
+        "scheduleSlotId": "cs4",
+        "date": "2026-06-17",
+        "trainerId": "t3",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa17",
+        "scheduleSlotId": "cs7",
+        "date": "2026-06-19",
+        "trainerId": "t4",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa18",
+        "scheduleSlotId": "cs9",
+        "date": "2026-06-20",
+        "trainerId": "t6",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa19",
+        "scheduleSlotId": "cs1",
+        "date": "2026-06-22",
+        "trainerId": "t1",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa20",
+        "scheduleSlotId": "cs2",
+        "date": "2026-06-22",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa21",
+        "scheduleSlotId": "cs4",
+        "date": "2026-06-24",
+        "trainerId": "t3",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa22",
+        "scheduleSlotId": "cs7",
+        "date": "2026-06-26",
+        "trainerId": "t4",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa23",
+        "scheduleSlotId": "cs9",
+        "date": "2026-06-27",
+        "trainerId": "t6",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa24",
+        "scheduleSlotId": "cs11",
+        "date": "2026-06-28",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa25",
+        "scheduleSlotId": "cs1",
+        "date": "2026-06-29",
+        "trainerId": "t1",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "sa26",
+        "scheduleSlotId": "cs2",
+        "date": "2026-06-29",
+        "trainerId": "t5",
+        "assignmentSeriesId": null
+      },
+      {
+        "id": "idh3paoo0",
+        "scheduleSlotId": "cs1",
+        "date": "2026-06-01",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id3w4kd1z"
+      },
+      {
+        "id": "idvx3jb7a",
+        "scheduleSlotId": "cs3",
+        "date": "2026-06-02",
+        "trainerId": "t5",
+        "assignmentSeriesId": "id5ifpw1w"
+      },
+      {
+        "id": "iduueuw8t",
+        "scheduleSlotId": "cs3",
+        "date": "2026-06-09",
+        "trainerId": "t5",
+        "assignmentSeriesId": "id5ifpw1w"
+      },
+      {
+        "id": "idvzftasz",
+        "scheduleSlotId": "cs3",
+        "date": "2026-06-16",
+        "trainerId": "t5",
+        "assignmentSeriesId": "id5ifpw1w"
+      },
+      {
+        "id": "idt3ov7xp",
+        "scheduleSlotId": "cs3",
+        "date": "2026-06-23",
+        "trainerId": "t5",
+        "assignmentSeriesId": "id5ifpw1w"
+      },
+      {
+        "id": "id17xkqvp",
+        "scheduleSlotId": "cs3",
+        "date": "2026-06-30",
+        "trainerId": "t5",
+        "assignmentSeriesId": "id5ifpw1w"
+      }
+    ]
+  }
+}
