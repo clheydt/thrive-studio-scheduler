@@ -4,7 +4,7 @@
     "name": "Master",
     "color": "#1a1a1a",
     "isMaster": true,
-    "savedAt": "2026-06-02T20:26:09.801Z"
+    "savedAt": "2026-06-02T20:28:47.807Z"
   },
   "data": {
     "trainers": [
@@ -41,12 +41,12 @@
       {
         "id": "id08akyks",
         "name": "Jessi Smithgall",
-        "color": "#888888"
+        "color": "#ac0c0c"
       },
       {
         "id": "idd35eygj",
         "name": "Amanda Chopka",
-        "color": "#888888"
+        "color": "#2108dd"
       },
       {
         "id": "idxvlymo2",
