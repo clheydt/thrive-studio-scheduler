@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Schedule</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f5f5f3;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;color:#1a1a1a}
+
+/* ── LOCK SCREEN ─────────────────────────────────────────────── */
+#lockScreen{position:fixed;inset:0;background:#f5f5f3;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px}
+.lock-card{background:#fff;border:1px solid #e5e5e2;border-radius:18px;padding:40px 36px;width:100%;max-width:360px;text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.08)}
+.lock-logo{width:52px;height:52px;border-radius:14px;background:#1a1a1a;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:22px}
+.lock-title{font-size:20px;font-weight:700;letter-spacing:-.4px;margin-bottom:4px}
+.lock-sub{font-size:13px;color:#999;margin-bottom:28px}
+.lock-input{width:100%;padding:11px 14px;border:1.5px solid #ddd;border-radius:10px;font-size:15px;font-family:inherit;outline:none;text-align:center;letter-spacing:.1em;transition:border .15s;margin-bottom:10px}
+.lock-input:focus{border-color:#1a1a1a}
+.lock-input.shake{animation:shake .35s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+.lock-btn{width:100%;padding:11px;border-radius:10px;border:none;background:#1a1a1a;color:#fff;font-size:14px;font-weight:600;cursor:pointer;transition:background .15s;margin-bottom:10px}
+.lock-btn:hover{background:#333}
+.lock-btn:disabled{background:#ccc;cursor:default}
+.lock-err{font-size:12px;color:#c00;min-height:16px;margin-bottom:8px}
+.lock-admin-link{font-size:11px;color:#bbb;cursor:pointer;border:none;background:none;font-family:inherit;text-decoration:underline}
+.lock-admin-link:hover{color:#888}
+
+/* ── ADMIN SETUP SCREEN ──────────────────────────────────────── */
+#adminScreen{position:fixed;inset:0;background:#f5f5f3;z-index:9998;display:none;align-items:center;justify-content:center;padding:20px;overflow-y:auto}
+.admin-card{background:#fff;border:1px solid #e5e5e2;border-radius:18px;padding:32px;width:100%;max-width:520px;box-shadow:0 8px 40px rgba(0,0,0,.08)}
+.admin-card h2{font-size:17px;font-weight:700;margin-bottom:4px;letter-spacing:-.3px}
+.admin-card .admin-sub{font-size:13px;color:#999;margin-bottom:24px;line-height:1.5}
+.admin-field{margin-bottom:16px}
+.admin-field label{display:block;font-size:11px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px}
+.admin-field input{width:100%;padding:9px 12px;border:1.5px solid #ddd;border-radius:9px;font-size:14px;font-family:inherit;outline:none;transition:border .15s}
+.admin-field input:focus{border-color:#1a1a1a}
+.admin-field .hint{font-size:11px;color:#aaa;margin-top:4px;line-height:1.4}
+.admin-step{background:#f8f8f6;border-radius:10px;padding:16px;margin-bottom:14px}
+.admin-step h3{font-size:13px;font-weight:700;margin-bottom:10px;color:#333}
+.admin-result{background:#1a1a1a;color:#a8f0a8;border-radius:9px;padding:14px;font-size:12px;font-family:'Courier New',monospace;word-break:break-all;line-height:1.6;margin-top:10px;min-height:48px;white-space:pre-wrap}
+.admin-result.empty{color:#555;font-style:italic}
+.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.status-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500}
+.status-badge.ok{background:#f0faf4;color:#1a6b3a;border:1px solid #b2dcbf}
+.status-badge.err{background:#fff0f0;color:#c00;border:1px solid #f5b8b8}
+.status-badge.pending{background:#f0f6ff;color:#1a4a8a;border:1px solid #b8d4f5}
+.divider{height:1px;background:#f0f0ee;margin:20px 0}
+.copy-btn{padding:5px 12px;border-radius:7px;border:1px solid #ddd;background:#fff;font-size:12px;cursor:pointer;transition:all .12s}
+.copy-btn:hover{background:#f5f5f3}
+
+/* ── MAIN APP ────────────────────────────────────────────────── */
+#appShell{display:none}
+header{background:#fff;border-bottom:1px solid #e5e5e2;padding:0 16px 0 20px;height:56px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:100}
+header h1{font-size:16px;font-weight:700;letter-spacing:-0.3px}
+.version-pill{display:flex;align-items:center;gap:6px;background:#f0f0ee;border-radius:20px;padding:4px 10px 4px 8px;cursor:pointer;border:1.5px solid transparent;transition:all .15s;max-width:200px}
+.version-pill:hover{border-color:#ccc;background:#eaeae8}
+.version-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.version-name{font-size:12px;font-weight:600;color:#444;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.version-caret{font-size:10px;color:#aaa;margin-left:2px}
+.header-spacer{flex:1}
+.mode-tabs{display:flex;background:#f0f0ee;border-radius:8px;padding:3px;gap:2px}
+.mode-tab{padding:5px 13px;border-radius:6px;border:none;background:transparent;font-size:13px;font-weight:500;cursor:pointer;color:#666;transition:all .15s;white-space:nowrap}
+.mode-tab.active{background:#fff;color:#1a1a1a;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.btn{padding:6px 13px;border-radius:7px;border:none;font-size:13px;font-weight:500;cursor:pointer;transition:all .15s;white-space:nowrap}
+.btn-primary{background:#1a1a1a;color:#fff}
+.btn-primary:hover{background:#333}
+.btn-ghost{background:transparent;color:#555;border:1px solid #ddd}
+.btn-ghost:hover{background:#f5f5f3}
+.btn-sm{padding:4px 10px;font-size:12px}
+.btn-danger{background:#fee;color:#c00;border:1px solid #fcc}
+.btn-danger:hover{background:#fcc}
+.btn-github{background:#24292e;color:#fff;display:flex;align-items:center;gap:6px}
+.btn-github:hover{background:#444}
+.btn-github svg{flex-shrink:0}
+main{padding:18px 20px;max-width:1600px;margin:0 auto}
+.layout{display:grid;grid-template-columns:152px 1fr;gap:18px;align-items:start}
+.layout.schedule-mode{grid-template-columns:1fr}
+.coach-bank{background:#fff;border:1px solid #e5e5e2;border-radius:12px;padding:12px;position:sticky;top:74px}
+.coach-bank h3{font-size:11px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px}
+.coach-pill{border-radius:8px;padding:7px 10px;margin-bottom:6px;cursor:grab;font-size:12px;font-weight:600;transition:transform .1s,box-shadow .1s;user-select:none;border:1px solid transparent}
+.coach-pill:hover{transform:scale(1.02);box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.coach-pill:active{cursor:grabbing;transform:scale(.97)}
+.coach-pill.dragging{opacity:.5}
+.cal-card{background:#fff;border:1px solid #e5e5e2;border-radius:12px;overflow:hidden}
+.cal-header{display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid #f0f0ee;gap:10px}
+.cal-nav{width:28px;height:28px;border-radius:7px;border:1px solid #e0e0dc;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all .12s}
+.cal-nav:hover{background:#f5f5f3;border-color:#ccc}
+.cal-month{font-size:15px;font-weight:700;flex:1;letter-spacing:-.3px}
+.cal-table-wrap{overflow-x:auto}
+table.cal{width:100%;table-layout:fixed;border-collapse:collapse}
+table.cal thead th{padding:7px 0;font-size:11px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid #f0f0ee;text-align:center}
+table.cal td{vertical-align:top;border:1px solid #f0f0ee;padding:7px 6px;min-height:120px;height:120px}
+.day-num{font-size:12px;font-weight:600;color:#aaa;margin-bottom:4px;display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%}
+.day-num.today{background:#1a1a1a;color:#fff}
+.day-num.cur{color:#1a1a1a}
+td.other-month{background:#fafafa}
+td.other-month .day-num{color:#ccc}
+.session-pill{border-radius:7px;padding:5px 6px;margin-bottom:3px;font-size:11px;cursor:pointer;transition:all .12s;border:1px solid transparent;position:relative;user-select:none}
+.session-pill:hover{filter:brightness(.96);box-shadow:0 1px 4px rgba(0,0,0,.1)}
+.session-pill.drag-over{outline:2px dashed #555;outline-offset:1px}
+.pill-top{display:flex;align-items:center;gap:4px;margin-bottom:2px}
+.pill-time{font-size:10px;font-weight:600;opacity:.75}
+.pill-badge{font-size:9px;font-weight:700;padding:1px 4px;border-radius:4px;background:rgba(0,0,0,.08);letter-spacing:.3px;flex-shrink:0}
+.pill-oneoff{font-size:9px;font-weight:700;padding:1px 4px;border-radius:4px;background:rgba(0,0,0,.1);letter-spacing:.2px;flex-shrink:0;font-style:italic}
+.pill-name{font-size:11px;font-weight:600;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill-coach{font-size:10px;opacity:.7;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.unassigned-pill{background:#f5f5f3;color:#888;border:1.5px dashed #d5d5d0}
+.unassigned-pill .pill-badge,.unassigned-pill .pill-oneoff{background:rgba(0,0,0,.06);color:#666}
+.session-pill.schedule-mode{cursor:pointer;border:1.5px solid #c8c8c4 !important;opacity:1}
+.session-pill.schedule-mode:hover{border-color:#888 !important;box-shadow:0 1px 5px rgba(0,0,0,.13)}
+.session-pill.trainer-hidden{opacity:.15;filter:grayscale(.7)}
+.coach-pill.trainer-hidden{opacity:.25}
+.sched-editor-banner{background:#fffbe6;border-bottom:1px solid #f0e29a;padding:7px 16px;font-size:12px;color:#7a6200;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.sched-editor-banner span{font-weight:600}
+.legend{display:flex;align-items:center;padding:9px 16px;background:#f8f8f6;border-top:1px solid #f0f0ee;flex-wrap:wrap;gap:8px;font-size:11px}
+.legend-coaches{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.legend-toggle{display:flex;align-items:center;gap:5px;padding:3px 8px;border-radius:20px;border:1.5px solid transparent;cursor:pointer;transition:all .15s;user-select:none;font-size:11px;font-weight:500;color:#555;background:transparent}
+.legend-toggle:hover{background:#eeeeed}
+.legend-toggle.off{opacity:.35;text-decoration:line-through}
+.legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.legend-divider{width:1px;height:18px;background:#e0e0dc;flex-shrink:0}
+.legend-types{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.legend-hint{margin-left:auto;color:#bbb;font-size:10.5px;font-style:italic}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:#fff;border-radius:14px;padding:22px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+.modal.wide{max-width:600px}
+.modal h2{font-size:16px;font-weight:700;margin-bottom:16px;letter-spacing:-.3px}
+.modal-section{margin-bottom:16px}
+.modal-section label{display:block;font-size:11px;font-weight:600;color:#666;margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
+.modal-section select,.modal-section input[type=text],.modal-section input[type=time],.modal-section input[type=date]{width:100%;padding:8px 10px;border:1px solid #ddd;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border .15s}
+.modal-section select:focus,.modal-section input:focus{border-color:#999}
+.locked-info{background:#f8f8f6;border-radius:8px;padding:11px 13px;margin-bottom:14px;font-size:13px}
+.locked-info .li-row{display:flex;gap:8px;margin-bottom:3px;align-items:baseline}
+.locked-info .li-label{font-size:11px;font-weight:600;color:#999;text-transform:uppercase;letter-spacing:.4px;width:70px;flex-shrink:0}
+.locked-info .li-val{font-size:13px;font-weight:500}
+.scope-options{display:flex;flex-direction:column;gap:5px}
+.scope-opt{display:flex;align-items:flex-start;gap:8px;cursor:pointer;padding:6px 10px;border-radius:8px;border:1.5px solid #e5e5e2;transition:border .12s}
+.scope-opt:hover{border-color:#bbb}
+.scope-opt input{margin-top:3px;flex-shrink:0}
+.scope-opt.selected{border-color:#1a1a1a;background:#fafafa}
+.scope-opt .scope-label{font-size:13px;font-weight:500}
+.scope-opt .scope-desc{font-size:11px;color:#999;margin-top:1px}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:18px;padding-top:14px;border-top:1px solid #f0f0ee}
+.warning{background:#fff8f0;border:1px solid #f5c07a;border-radius:8px;padding:9px 12px;font-size:12px;color:#8a5c00;margin-bottom:12px}
+.info-box{background:#f0f6ff;border:1px solid #b8d4f5;border-radius:8px;padding:9px 12px;font-size:12px;color:#1a4a8a;margin-bottom:12px}
+.date-range-row{display:flex;gap:8px;margin-top:7px}
+.date-range-row input{flex:1;padding:7px 9px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit}
+.recur-toggle{display:flex;gap:0;border:1px solid #ddd;border-radius:8px;overflow:hidden;margin-bottom:0}
+.recur-btn{flex:1;padding:8px;border:none;background:#fff;font-size:13px;font-family:inherit;cursor:pointer;transition:all .12s;color:#555}
+.recur-btn.active{background:#1a1a1a;color:#fff;font-weight:600}
+.settings-section{margin-bottom:22px}
+.settings-section h3{font-size:13px;font-weight:700;margin-bottom:9px;color:#333}
+.settings-row{display:grid;grid-template-columns:36px 1fr 28px;gap:8px;align-items:center;margin-bottom:7px}
+.settings-row .color-swatch{width:36px;height:34px;border-radius:6px;border:none;cursor:pointer;padding:0}
+.settings-row input[type=text]{padding:6px 8px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;width:100%}
+.settings-row .rm-btn{width:28px;height:28px;border:none;background:transparent;color:#bbb;cursor:pointer;font-size:16px;border-radius:6px;display:flex;align-items:center;justify-content:center;transition:all .12s}
+.settings-row .rm-btn:hover{background:#fee;color:#c00}
+.settings-add{display:flex;align-items:center;gap:6px;margin-top:4px;cursor:pointer;color:#666;font-size:12px;font-weight:500;padding:4px 2px;width:fit-content}
+.settings-add:hover{color:#1a1a1a}
+.sched-row{background:#f8f8f6;border-radius:8px;padding:7px 10px;margin-bottom:5px;display:flex;flex-wrap:wrap;gap:5px;align-items:center;font-size:12px}
+.sched-row .rm-btn{margin-left:auto;width:24px;height:24px;border:none;background:transparent;color:#bbb;cursor:pointer;font-size:14px;border-radius:5px;display:flex;align-items:center;justify-content:center}
+.sched-row .rm-btn:hover{background:#fee;color:#c00}
+.version-list{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.version-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;border:1.5px solid #e5e5e2;cursor:pointer;transition:all .12s}
+.version-item:hover{border-color:#bbb;background:#fafafa}
+.version-item.active-ver{border-color:#1a1a1a;background:#f8f8f6}
+.version-item .vi-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.version-item .vi-info{flex:1;min-width:0}
+.version-item .vi-name{font-size:13px;font-weight:600}
+.version-item .vi-meta{font-size:11px;color:#999;margin-top:1px}
+.version-item .vi-actions{display:flex;gap:5px;flex-shrink:0}
+.version-section-label{font-size:11px;font-weight:600;color:#aaa;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px;margin-top:14px}
+.gh-row{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.gh-row label{font-size:11px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:.4px}
+.gh-row input{padding:7px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit;outline:none;transition:border .15s;width:100%}
+.gh-row input:focus{border-color:#999}
+.gh-status{font-size:12px;padding:7px 10px;border-radius:7px;margin-top:4px}
+.gh-status.ok{background:#f0faf4;color:#1a6b3a;border:1px solid #b2dcbf}
+.gh-status.err{background:#fff0f0;color:#c00;border:1px solid #f5b8b8}
+.gh-status.loading{background:#f0f6ff;color:#1a4a8a;border:1px solid #b8d4f5}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════
+     LOCK SCREEN
+════════════════════════════════════════════════════════════════ -->
+<div id="lockScreen">
+  <div class="lock-card">
+    <div class="lock-logo">📅</div>
+    <div class="lock-title">Studio Schedule</div>
+    <div class="lock-sub">Enter your access password to continue</div>
+    <input class="lock-input" type="password" id="lockPassword" placeholder="Password"
+      onkeydown="if(event.key==='Enter')unlock()">
+    <div class="lock-err" id="lockErr"></div>
+    <button class="lock-btn" id="lockBtn" onclick="unlock()">Unlock</button>
+    <button class="lock-admin-link" onclick="showAdminScreen()">Admin setup</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     ADMIN SETUP SCREEN
+     This is where YOU (the admin) generate the encrypted blob
+     and embed it in the file. Staff never see this screen.
+════════════════════════════════════════════════════════════════ -->
+<div id="adminScreen">
+  <div class="admin-card">
+    <h2>🔧 Admin Setup</h2>
+    <p class="admin-sub">Use this screen to configure the app password and embed your GitHub token. You do this once, then share the updated HTML file with your team. Staff will only ever see the lock screen.</p>
+
+    <div class="admin-step">
+      <h3>Step 1 — Enter your GitHub details</h3>
+      <div class="admin-field">
+        <label>GitHub Personal Access Token</label>
+        <input type="password" id="adminToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+        <div class="hint">From GitHub → Settings → Developer settings → Personal access tokens. Needs <strong>repo</strong> scope.</div>
+      </div>
+      <div class="admin-field">
+        <label>Repository (owner/repo)</label>
+        <input type="text" id="adminRepo" placeholder="yourname/studio-schedule">
+      </div>
+      <div class="admin-field">
+        <label>Branch</label>
+        <input type="text" id="adminBranch" placeholder="main" value="main">
+      </div>
+    </div>
+
+    <div class="admin-step">
+      <h3>Step 2 — Set the access password</h3>
+      <div class="admin-field">
+        <label>Password your staff will use to unlock the app</label>
+        <input type="text" id="adminPassword" placeholder="e.g. pilates2025">
+        <div class="hint">Share this with your team. It encrypts your GitHub token — without the right password, the token cannot be read.</div>
+      </div>
+    </div>
+
+    <div class="admin-step">
+      <h3>Step 3 — Generate encrypted blob</h3>
+      <p style="font-size:12px;color:#666;margin-bottom:10px;line-height:1.5">Click the button below. This turns your token into an encrypted string that is safe to store in the HTML file — it's meaningless without the password.</p>
+      <div class="admin-actions">
+        <button class="btn btn-primary" onclick="generateBlob()">Generate Encrypted Blob</button>
+        <span id="blobStatus"></span>
+      </div>
+      <div class="admin-result empty" id="blobResult">Encrypted blob will appear here…</div>
+      <div class="admin-actions" style="margin-top:8px">
+        <button class="copy-btn" onclick="copyBlob()">Copy blob</button>
+      </div>
+    </div>
+
+    <div class="admin-step">
+      <h3>Step 4 — Embed the blob in the HTML file</h3>
+      <ol style="font-size:12px;color:#555;line-height:2;padding-left:18px">
+        <li>Copy the blob above</li>
+        <li>Open the HTML file in a text editor (Notepad, TextEdit, VS Code, etc.)</li>
+        <li>Find the line that says <code style="background:#f0f0ee;padding:1px 5px;border-radius:3px">const ENCRYPTED_BLOB = '';</code></li>
+        <li>Paste your blob between the single quotes so it looks like <code style="background:#f0f0ee;padding:1px 5px;border-radius:3px">const ENCRYPTED_BLOB = 'abc123…';</code></li>
+        <li>Save the file and share it with your team</li>
+      </ol>
+      <div style="margin-top:10px;font-size:12px;color:#aaa">The admin setup screen is always accessible from the lock screen link below — you'll need the admin password to get in. Keep that password separate from the staff password.</div>
+    </div>
+
+    <div class="divider"></div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-ghost" onclick="hideAdminScreen()">← Back to Lock Screen</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     MAIN APP SHELL (hidden until unlocked)
+════════════════════════════════════════════════════════════════ -->
+<div id="appShell">
+<header>
+  <h1>Studio Schedule</h1>
+  <div class="version-pill" onclick="openVersionManager()" id="versionPill" title="Manage versions">
+    <div class="version-dot" id="versionDot" style="background:#1a1a1a"></div>
+    <div class="version-name" id="versionName">Master</div>
+    <div class="version-caret">▾</div>
+  </div>
+  <div class="header-spacer"></div>
+  <div class="mode-tabs">
+    <button class="mode-tab active" id="tabAssign" onclick="setMode('assign')">Staff Assignment</button>
+    <button class="mode-tab" id="tabSchedule" onclick="setMode('schedule')">Schedule Editor</button>
+  </div>
+  <button class="btn btn-ghost" id="ghSyncBtn" onclick="githubSync()" style="display:none" title="Sync to GitHub">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" style="vertical-align:middle;margin-right:4px"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    Sync
+  </button>
+  <button class="btn btn-ghost" onclick="openSettings()">⚙ Settings</button>
+</header>
+
+<main>
+<div class="layout" id="mainLayout">
+  <div class="coach-bank" id="coachBank">
+    <h3>Coaches</h3>
+    <div id="coachList"></div>
+  </div>
+  <div>
+    <div class="cal-card">
+      <div class="cal-header">
+        <button class="cal-nav" onclick="changeMonth(-1)">‹</button>
+        <div class="cal-month" id="calMonth"></div>
+        <button class="cal-nav" onclick="changeMonth(1)">›</button>
+      </div>
+      <div class="cal-table-wrap">
+        <div class="sched-editor-banner" id="schedBanner" style="display:none">
+          ✏️ <span>Schedule Editor Mode</span> — Click any pill to edit. Click a blank day to add a class on that date.
+          <button class="btn btn-ghost btn-sm" style="margin-left:auto" onclick="setMode('assign')">← Back to Staff Assignment</button>
+        </div>
+        <table class="cal">
+          <thead><tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead>
+          <tbody id="calBody"></tbody>
+        </table>
+      </div>
+      <div class="legend" id="legend"></div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- Assignment Modal -->
+<div class="overlay" id="assignOverlay" style="display:none" onclick="overlayClick(event,'assignOverlay')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <h2>Assign Coach</h2>
+    <div class="locked-info" id="assignLockedInfo"></div>
+    <div class="modal-section">
+      <label>Coach</label>
+      <select id="assignCoachSel"></select>
+    </div>
+    <div class="modal-section" id="scopeSection">
+      <label>Assignment Scope</label>
+      <div class="scope-options">
+        <label class="scope-opt selected" onclick="selectScope(this,'once')"><input type="radio" name="scope" value="once" checked>
+          <div><div class="scope-label">Just this one</div><div class="scope-desc">Only this specific date</div></div></label>
+        <label class="scope-opt" onclick="selectScope(this,'month')"><input type="radio" name="scope" value="month">
+          <div><div class="scope-label">Entire month</div><div class="scope-desc">All matching slots this month</div></div></label>
+        <label class="scope-opt" onclick="selectScope(this,'forward')"><input type="radio" name="scope" value="forward">
+          <div><div class="scope-label">Rest of month</div><div class="scope-desc">This date forward through month end</div></div></label>
+        <label class="scope-opt" onclick="selectScope(this,'range')"><input type="radio" name="scope" value="range">
+          <div><div class="scope-label">Custom date range</div><div class="scope-desc">Pick start and end dates</div>
+          <div class="date-range-row" id="rangeRow" style="display:none"><input type="date" id="rangeStart"><input type="date" id="rangeEnd"></div></div></label>
+        <label class="scope-opt" onclick="selectScope(this,'all')"><input type="radio" name="scope" value="all">
+          <div><div class="scope-label">All matching slots</div><div class="scope-desc">Every occurrence (all time)</div></div></label>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('assignOverlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveAssignment()">Save Assignment</button>
+    </div>
+  </div>
+</div>
+
+<!-- Schedule Slot Modal -->
+<div class="overlay" id="schedOverlay" style="display:none" onclick="overlayClick(event,'schedOverlay')">
+  <div class="modal" onclick="event.stopPropagation()">
+    <h2 id="schedModalTitle">Add Class</h2>
+    <div id="schedWarning"></div>
+    <div class="modal-section" id="recurrenceToggleSection">
+      <label>Schedule Type</label>
+      <div class="recur-toggle">
+        <button class="recur-btn active" id="recurWeeklyBtn" onclick="setRecurrence('weekly')">🔁 Recurring Weekly</button>
+        <button class="recur-btn" id="recurOnceBtn" onclick="setRecurrence('once')">📅 One-Off Date</button>
+      </div>
+    </div>
+    <div id="recurringFields">
+      <div class="modal-section">
+        <label>Day of Week</label>
+        <select id="schedDay">
+          <option value="1">Monday</option><option value="2">Tuesday</option><option value="3">Wednesday</option>
+          <option value="4">Thursday</option><option value="5">Friday</option><option value="6">Saturday</option><option value="0">Sunday</option>
+        </select>
+      </div>
+    </div>
+    <div id="oneoffFields" style="display:none">
+      <div class="modal-section"><label>Date</label><input type="date" id="schedOneoffDate"></div>
+    </div>
+    <div class="modal-section"><label>Time</label><input type="time" id="schedTime"></div>
+    <div class="modal-section"><label>Class Type</label><select id="schedType"></select></div>
+    <div class="modal-section"><label>Session Name</label><input type="text" id="schedName" placeholder="e.g. Morning Flow"></div>
+    <div class="modal-section"><label>Location / Studio (optional)</label><input type="text" id="schedLoc" placeholder="e.g. Studio A"></div>
+    <div class="modal-section" id="schedActiveSection"><label>Status</label><select id="schedActive"><option value="1">Active</option><option value="0">Inactive</option></select></div>
+    <div class="modal-actions">
+      <button class="btn btn-danger btn-sm" id="schedDeleteBtn" style="display:none;margin-right:auto" onclick="deleteSchedSlot()">Delete</button>
+      <button class="btn btn-ghost" onclick="closeModal('schedOverlay')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveSchedSlot()">Save Class</button>
+    </div>
+  </div>
+</div>
+
+<!-- Settings Panel -->
+<div class="overlay" id="settingsOverlay" style="display:none" onclick="overlayClick(event,'settingsOverlay')">
+  <div class="modal wide" onclick="event.stopPropagation()">
+    <h2>Settings</h2>
+    <div class="settings-section"><h3>Coaches</h3><div id="trainerRows"></div><div class="settings-add" onclick="addTrainer()">+ Add Coach</div></div>
+    <div class="settings-section"><h3>Class Types</h3><div id="typeRows"></div><div class="settings-add" onclick="addClassType()">+ Add Class Type</div></div>
+    <div class="settings-section"><h3>Class Schedule</h3><div id="schedRows"></div><div class="settings-add" onclick="openNewSchedSlot()">+ Add Class</div></div>
+    <div class="settings-section">
+      <h3>GitHub Sync</h3>
+      <div id="ghAutoNote" style="font-size:12px;color:#1a6b3a;background:#f0faf4;border:1px solid #b2dcbf;border-radius:8px;padding:9px 12px;margin-bottom:10px;display:none">✓ GitHub connected automatically via embedded credentials.</div>
+      <div id="ghManualFields">
+        <div class="gh-row"><label>Personal Access Token</label><input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxx"></div>
+        <div class="gh-row"><label>Repository (owner/repo)</label><input type="text" id="ghRepo" placeholder="yourname/studio-schedule"></div>
+        <div class="gh-row"><label>Branch</label><input type="text" id="ghBranch" placeholder="main"></div>
+        <div id="ghStatus"></div>
+        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+          <button class="btn btn-github" onclick="saveGhSettings()">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            Save & Test Connection
+          </button>
+          <button class="btn btn-ghost" onclick="ghPull()">↓ Pull from GitHub</button>
+        </div>
+      </div>
+      <div style="font-size:11px;color:#aaa;margin-top:10px;line-height:1.5">Each version is saved as <code style="background:#f0f0ee;padding:1px 4px;border-radius:3px">schedules/{version-id}.json</code> in your repo.</div>
+    </div>
+    <div class="modal-actions"><button class="btn btn-primary" onclick="closeModal('settingsOverlay')">Done</button></div>
+  </div>
+</div>
+
+<!-- Version Manager Modal -->
+<div class="overlay" id="versionOverlay" style="display:none" onclick="overlayClick(event,'versionOverlay')">
+  <div class="modal wide" onclick="event.stopPropagation()">
+    <h2>Schedule Versions</h2>
+    <div class="info-box">The <strong>Master</strong> version is your source of truth. Sub-versions are forks you can edit independently.</div>
+    <div class="version-section-label">Your Versions</div>
+    <div id="versionList"></div>
+    <div style="display:flex;gap:8px;margin-top:4px;flex-wrap:wrap">
+      <button class="btn btn-ghost" onclick="createVersion()">+ New Version</button>
+      <button class="btn btn-ghost" onclick="forkFromMaster()">⎇ Fork from Master</button>
+    </div>
+    <div class="modal-actions"><button class="btn btn-primary" onclick="closeModal('versionOverlay')">Done</button></div>
+  </div>
+</div>
+
+</div><!-- end #appShell -->
+
+<script>
+'use strict';
+
+// ================================================================
+// ENCRYPTED BLOB — paste your generated blob between the quotes
+// Leave empty ('') if you haven't set one up yet
+// ================================================================
+const ENCRYPTED_BLOB = 'dy1mHQmr9qd43ihY2y2INtlVUeLPloDY9HA2CgK0526/8gL85K9Zt7sUySJHyb7gsMzlmSiqMQygf90eHHMPlJhgOm5UUwTzI/P2KhyYp+0DbCfDjuDGxXXfDJRTCYPat8tWi51b6EjZywNDaadM2GEKFPZE4cGRMdlzxIRG23EabtauXtEt+D9rfyJYWO/EaGJ9sFFIZ9qKl2iv+eklXA==';
+
+// Admin password to access the setup screen
+// Change this to something only you know
+const ADMIN_PASSWORD = 'GoodVibes247365';
+
+// ================================================================
+// CRYPTO HELPERS  (Web Crypto API — built into every browser)
+// ================================================================
+async function deriveKey(password, salt){
+  const enc = new TextEncoder();
+  const keyMaterial = await crypto.subtle.importKey('raw', enc.encode(password), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey(
+    {name:'PBKDF2', salt, iterations:200000, hash:'SHA-256'},
+    keyMaterial, {name:'AES-GCM', length:256}, false, ['encrypt','decrypt']
+  );
+}
+
+async function encryptData(password, plaintext){
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const iv   = crypto.getRandomValues(new Uint8Array(12));
+  const key  = await deriveKey(password, salt);
+  const enc  = new TextEncoder();
+  const ciphertext = await crypto.subtle.encrypt({name:'AES-GCM', iv}, key, enc.encode(plaintext));
+  // Pack: salt(16) + iv(12) + ciphertext, encode as base64
+  const combined = new Uint8Array(16 + 12 + ciphertext.byteLength);
+  combined.set(salt, 0); combined.set(iv, 16); combined.set(new Uint8Array(ciphertext), 28);
+  return btoa(String.fromCharCode(...combined));
+}
+
+async function decryptData(password, blob){
+  const bytes = Uint8Array.from(atob(blob), c => c.charCodeAt(0));
+  const salt  = bytes.slice(0, 16);
+  const iv    = bytes.slice(16, 28);
+  const data  = bytes.slice(28);
+  const key   = await deriveKey(password, salt);
+  const plain = await crypto.subtle.decrypt({name:'AES-GCM', iv}, key, data);
+  return new TextDecoder().decode(plain);
+}
+
+// ================================================================
+// LOCK SCREEN
+// ================================================================
+async function unlock(){
+  const pw = document.getElementById('lockPassword').value;
+  if(!pw){ showLockErr('Please enter a password.'); return; }
+
+  const btn = document.getElementById('lockBtn');
+  btn.disabled = true; btn.textContent = 'Checking…';
+
+  // If no blob is embedded yet, just check against admin password
+  // so you can still use the app during development
+  if(!ENCRYPTED_BLOB){
+    if(pw === ADMIN_PASSWORD){
+      launchApp(null); return;
+    }
+    showLockErr('No credentials embedded yet. Use Admin Setup first.');
+    btn.disabled=false; btn.textContent='Unlock'; return;
+  }
+
+  try {
+    const json = await decryptData(pw, ENCRYPTED_BLOB);
+    const creds = JSON.parse(json);
+    launchApp(creds);
+  } catch(e) {
+    showLockErr('Incorrect password. Try again.');
+    const input = document.getElementById('lockPassword');
+    input.classList.add('shake');
+    input.value='';
+    setTimeout(()=>input.classList.remove('shake'), 400);
+    btn.disabled=false; btn.textContent='Unlock';
+  }
+}
+
+function showLockErr(msg){
+  document.getElementById('lockErr').textContent = msg;
+  document.getElementById('lockBtn').disabled = false;
+  document.getElementById('lockBtn').textContent = 'Unlock';
+}
+
+function launchApp(creds){
+  // Hide lock screen, show app
+  document.getElementById('lockScreen').style.display = 'none';
+  document.getElementById('appShell').style.display = 'block';
+
+  // If we got credentials from the blob, wire up GitHub automatically
+  if(creds && creds.token && creds.repo){
+    ghSettings.token  = creds.token;
+    ghSettings.repo   = creds.repo;
+    ghSettings.branch = creds.branch || 'main';
+    document.getElementById('ghSyncBtn').style.display = 'flex';
+    // Auto-pull the latest schedule from GitHub
+    ghPull(true);
+  }
+
+  initVersions();
+  updateVersionPill();
+  renderCalendar();
+}
+
+// ================================================================
+// ADMIN SETUP SCREEN
+// ================================================================
+const ADMIN_ENTER_KEY_SEQ = []; // for the admin link — requires admin password
+function showAdminScreen(){
+  const pw = prompt('Enter admin password:');
+  if(pw !== ADMIN_PASSWORD){ alert('Incorrect admin password.'); return; }
+  document.getElementById('lockScreen').style.display = 'none';
+  document.getElementById('adminScreen').style.display = 'flex';
+}
+function hideAdminScreen(){
+  document.getElementById('adminScreen').style.display = 'none';
+  document.getElementById('lockScreen').style.display = 'flex';
+}
+
+async function generateBlob(){
+  const token  = document.getElementById('adminToken').value.trim();
+  const repo   = document.getElementById('adminRepo').value.trim();
+  const branch = document.getElementById('adminBranch').value.trim() || 'main';
+  const pw     = document.getElementById('adminPassword').value;
+
+  if(!token || !repo){ document.getElementById('blobStatus').innerHTML='<span class="status-badge err">Fill in token and repo first</span>'; return; }
+  if(!pw){ document.getElementById('blobStatus').innerHTML='<span class="status-badge err">Enter a password</span>'; return; }
+
+  document.getElementById('blobStatus').innerHTML='<span class="status-badge pending">Encrypting…</span>';
+
+  try {
+    const payload = JSON.stringify({token, repo, branch});
+    const blob = await encryptData(pw, payload);
+    document.getElementById('blobResult').textContent = blob;
+    document.getElementById('blobResult').classList.remove('empty');
+    document.getElementById('blobStatus').innerHTML='<span class="status-badge ok">✓ Ready to copy</span>';
+  } catch(e) {
+    document.getElementById('blobStatus').innerHTML='<span class="status-badge err">Error: '+e.message+'</span>';
+  }
+}
+
+function copyBlob(){
+  const text = document.getElementById('blobResult').textContent;
+  if(!text || text.includes('appear here')) return;
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent='Copied!'; setTimeout(()=>btn.textContent='Copy blob', 1500);
+  });
+}
+
+// ================================================================
+// APP STATE
+// ================================================================
+let versions = [];
+let activeVersionId = 'master';
+let ghSettings = {token:'', repo:'', branch:'main'};
+
+function vData(){ return getVersion(activeVersionId).data; }
+function getVersion(id){ return versions.find(v=>v.id===id); }
+
+function defaultData(){
+  return {
+    trainers:[
+      {id:'t1',name:'Ashley Mentzer',color:'#0F6E56'},
+      {id:'t2',name:'Erin Dugan',color:'#185FA5'},
+      {id:'t3',name:'Jamie Hund',color:'#854F0B'},
+      {id:'t4',name:'Dana Sherwood',color:'#993556'},
+      {id:'t5',name:'Kayla Wintermyer',color:'#534AB7'},
+      {id:'t6',name:'Rotating Instructor',color:'#5F5E5A'},
+    ],
+    classTypes:[
+      {id:'ct1',code:'S',label:'Small Group'},
+      {id:'ct2',code:'L',label:'Large Group'},
+      {id:'ct3',code:'P',label:'Pilates'},
+    ],
+    classSchedule:[
+      {id:'cs1', recurrence:'weekly',dayOfWeek:1,time:'06:00',classTypeId:'ct1',sessionName:'Morning Burn',   location:'Studio A',  active:true},
+      {id:'cs2', recurrence:'weekly',dayOfWeek:1,time:'09:00',classTypeId:'ct3',sessionName:'Morning Flow',   location:'Studio B',  active:true},
+      {id:'cs3', recurrence:'weekly',dayOfWeek:2,time:'18:00',classTypeId:'ct1',sessionName:'Evening Reformer',location:'Studio A', active:true},
+      {id:'cs4', recurrence:'weekly',dayOfWeek:3,time:'07:00',classTypeId:'ct2',sessionName:'Power Hour',     location:'Main Floor',active:true},
+      {id:'cs5', recurrence:'weekly',dayOfWeek:3,time:'12:00',classTypeId:'ct3',sessionName:'Midday Pilates', location:'Studio B',  active:true},
+      {id:'cs6', recurrence:'weekly',dayOfWeek:4,time:'18:30',classTypeId:'ct1',sessionName:'Evening Burn',   location:'Studio A',  active:true},
+      {id:'cs7', recurrence:'weekly',dayOfWeek:5,time:'06:00',classTypeId:'ct2',sessionName:'Friday HIIT',    location:'Main Floor',active:true},
+      {id:'cs8', recurrence:'weekly',dayOfWeek:5,time:'09:30',classTypeId:'ct3',sessionName:'Weekend Warm-Up',location:'Studio B',  active:true},
+      {id:'cs9', recurrence:'weekly',dayOfWeek:6,time:'08:00',classTypeId:'ct2',sessionName:'Saturday Sweat', location:'Main Floor',active:true},
+      {id:'cs10',recurrence:'weekly',dayOfWeek:6,time:'10:00',classTypeId:'ct3',sessionName:'Core & Restore', location:'Studio B',  active:true},
+      {id:'cs11',recurrence:'weekly',dayOfWeek:0,time:'09:00',classTypeId:'ct3',sessionName:'Sunday Flow',    location:'Studio B',  active:true},
+    ],
+    staffAssignments:[]
+  };
+}
+
+function seedAssignments(data){
+  const now=new Date(), y=now.getFullYear(), m=now.getMonth();
+  const dim=new Date(y,m+1,0).getDate(); let ctr=1;
+  for(let d=1;d<=dim;d++){
+    const dt=new Date(y,m,d), dow=dt.getDay();
+    data.classSchedule.forEach(cs=>{
+      if(!cs.active||cs.recurrence!=='weekly'||cs.dayOfWeek!==dow) return;
+      const ds=fmtDate(dt); let tid=null;
+      if(cs.id==='cs1') tid='t1'; else if(cs.id==='cs2') tid='t5';
+      else if(cs.id==='cs3'&&d<=15) tid='t2'; else if(cs.id==='cs4') tid='t3';
+      else if(cs.id==='cs7') tid='t4'; else if(cs.id==='cs9') tid='t6';
+      else if(cs.id==='cs11'&&d%2===0) tid='t5';
+      if(tid) data.staffAssignments.push({id:'sa'+(ctr++),scheduleSlotId:cs.id,date:ds,trainerId:tid,assignmentSeriesId:null});
+    });
+  }
+}
+
+// ================================================================
+// HELPERS
+// ================================================================
+function fmtDate(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function parseDate(s){ const[y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
+function fmt12(t){ let[h,mn]=t.split(':').map(Number); const ap=h>=12?'pm':'am'; h=h%12||12; return h+':'+(mn?String(mn).padStart(2,'0'):'00')+ap; }
+function pillBg(hex){ const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16); return 'rgb('+Math.round(r*0.15+255*0.85)+','+Math.round(g*0.15+255*0.85)+','+Math.round(b*0.15+255*0.85)+')'; }
+function pillText(hex){ const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16); return 'rgb('+Math.round(r*0.55)+','+Math.round(g*0.55)+','+Math.round(b*0.55)+')'; }
+function uid(){ return 'id'+Math.random().toString(36).slice(2,9); }
+function deepClone(x){ return JSON.parse(JSON.stringify(x)); }
+function getAssignment(slotId,dateStr){ return vData().staffAssignments.find(a=>a.scheduleSlotId===slotId&&a.date===dateStr)||null; }
+function getTrainer(id){ return vData().trainers.find(t=>t.id===id)||null; }
+function getClassType(id){ return vData().classTypes.find(ct=>ct.id===id)||null; }
+function slotsForDate(dateStr){
+  const d=parseDate(dateStr), dow=d.getDay();
+  return vData().classSchedule.filter(cs=>{
+    if(!cs.active) return false;
+    if(cs.recurrence==='weekly') return cs.dayOfWeek===dow;
+    if(cs.recurrence==='once')   return cs.date===dateStr;
+    return false;
+  }).sort((a,b)=>a.time.localeCompare(b.time));
+}
+
+// ================================================================
+// VERSIONS
+// ================================================================
+function initVersions(){
+  if(versions.length) return; // already initialised (e.g. after pull)
+  const data=defaultData(); seedAssignments(data);
+  versions=[{id:'master',name:'Master',color:'#1a1a1a',isMaster:true,createdAt:new Date().toISOString(),data}];
+  activeVersionId='master';
+}
+function switchVersion(id){ activeVersionId=id; hiddenTrainers=new Set(); updateVersionPill(); renderCalendar(); closeModal('versionOverlay'); }
+function updateVersionPill(){ const v=getVersion(activeVersionId); if(!v) return; document.getElementById('versionDot').style.background=v.color; document.getElementById('versionName').textContent=v.name; }
+function openVersionManager(){ renderVersionList(); document.getElementById('versionOverlay').style.display='flex'; }
+function renderVersionList(){
+  const el=document.getElementById('versionList'); el.innerHTML='';
+  versions.forEach(v=>{
+    const item=document.createElement('div'); item.className='version-item'+(v.id===activeVersionId?' active-ver':'');
+    const dot=document.createElement('div'); dot.className='vi-dot'; dot.style.background=v.color;
+    const info=document.createElement('div'); info.className='vi-info';
+    const nm=document.createElement('div'); nm.className='vi-name'; nm.textContent=v.name+(v.isMaster?' (Master)':'');
+    const meta=document.createElement('div'); meta.className='vi-meta';
+    meta.textContent=v.data.classSchedule.filter(c=>c.active).length+' classes · '+v.data.staffAssignments.length+' assignments'+(v.id===activeVersionId?' · active':'');
+    info.appendChild(nm); info.appendChild(meta);
+    const acts=document.createElement('div'); acts.className='vi-actions';
+    if(v.id!==activeVersionId){ const lb=document.createElement('button'); lb.className='btn btn-ghost btn-sm'; lb.textContent='Load'; lb.onclick=e=>{e.stopPropagation();switchVersion(v.id);}; acts.appendChild(lb); }
+    if(!v.isMaster){
+      const rb=document.createElement('button'); rb.className='btn btn-ghost btn-sm'; rb.textContent='✎'; rb.title='Rename';
+      rb.onclick=e=>{e.stopPropagation();const n=prompt('Rename:',v.name);if(n&&n.trim()){v.name=n.trim();renderVersionList();}};
+      const db=document.createElement('button'); db.className='btn btn-danger btn-sm'; db.textContent='✕';
+      db.onclick=e=>{e.stopPropagation();if(!confirm('Delete "'+v.name+'"?'))return;const idx=versions.findIndex(x=>x.id===v.id);if(idx>-1)versions.splice(idx,1);if(activeVersionId===v.id)switchVersion('master');else renderVersionList();};
+      acts.appendChild(rb); acts.appendChild(db);
+    }
+    const sb=document.createElement('button'); sb.className='btn btn-ghost btn-sm'; sb.textContent='⬆ Save'; sb.title='Push to GitHub';
+    sb.onclick=e=>{e.stopPropagation();githubPush(v.id);}; acts.appendChild(sb);
+    item.appendChild(dot); item.appendChild(info); item.appendChild(acts);
+    item.onclick=()=>switchVersion(v.id); el.appendChild(item);
+  });
+}
+function createVersion(){ const name=prompt('Version name:','Alt Schedule'); if(!name||!name.trim()) return; const colors=['#2563eb','#16a34a','#dc2626','#9333ea','#ea580c','#0891b2','#65a30d','#be185d']; versions.push({id:uid(),name:name.trim(),color:colors[versions.length%colors.length],isMaster:false,createdAt:new Date().toISOString(),data:defaultData()}); renderVersionList(); }
+function forkFromMaster(){ const name=prompt('Fork name:','Fork of Master'); if(!name||!name.trim()) return; const colors=['#2563eb','#16a34a','#dc2626','#9333ea','#ea580c','#0891b2','#65a30d','#be185d']; versions.push({id:uid(),name:name.trim(),color:colors[versions.length%colors.length],isMaster:false,createdAt:new Date().toISOString(),data:deepClone(getVersion('master').data)}); renderVersionList(); }
+
+// ================================================================
+// TRAINER VISIBILITY
+// ================================================================
+let hiddenTrainers = new Set();
+function toggleTrainer(tid){ if(hiddenTrainers.has(tid)) hiddenTrainers.delete(tid); else hiddenTrainers.add(tid); renderCalendar(); }
+
+// ================================================================
+// MODE
+// ================================================================
+let currentMode = 'assign';
+function setMode(m){
+  currentMode=m;
+  document.getElementById('tabAssign').classList.toggle('active',m==='assign');
+  document.getElementById('tabSchedule').classList.toggle('active',m==='schedule');
+  document.getElementById('coachBank').style.display=m==='assign'?'':'none';
+  document.getElementById('mainLayout').classList.toggle('schedule-mode',m==='schedule');
+  document.getElementById('schedBanner').style.display=m==='schedule'?'flex':'none';
+  renderCalendar();
+}
+
+// ================================================================
+// CALENDAR
+// ================================================================
+let calYear=new Date().getFullYear(), calMonth=new Date().getMonth();
+function changeMonth(d){ calMonth+=d; if(calMonth>11){calMonth=0;calYear++;} if(calMonth<0){calMonth=11;calYear--;} renderCalendar(); }
+
+function renderCalendar(){
+  const todayStr=fmtDate(new Date());
+  document.getElementById('calMonth').textContent=new Date(calYear,calMonth,1).toLocaleDateString('en-US',{month:'long',year:'numeric'});
+  const firstDay=new Date(calYear,calMonth,1), startOffset=(firstDay.getDay()+6)%7;
+  const dim=new Date(calYear,calMonth+1,0).getDate(), prevDays=new Date(calYear,calMonth,0).getDate();
+  const tbody=document.getElementById('calBody'); tbody.innerHTML='';
+  let dc=1,nc=1;
+  for(let r=0;r<Math.ceil((startOffset+dim)/7);r++){
+    const tr=document.createElement('tr');
+    for(let c=0;c<7;c++){
+      const td=document.createElement('td'); let date,isCur;
+      if(r===0&&c<startOffset){date=new Date(calYear,calMonth-1,prevDays-startOffset+c+1);isCur=false;td.classList.add('other-month');}
+      else if(dc>dim){date=new Date(calYear,calMonth+1,nc++);isCur=false;td.classList.add('other-month');}
+      else{date=new Date(calYear,calMonth,dc++);isCur=true;}
+      const dateStr=fmtDate(date);
+      const numEl=document.createElement('div'); numEl.className='day-num'+(isCur?' cur':'')+(dateStr===todayStr?' today':''); numEl.textContent=date.getDate();
+      td.appendChild(numEl);
+      slotsForDate(dateStr).forEach(cs=>td.appendChild(buildPill(cs,dateStr,isCur)));
+      if(currentMode==='schedule'&&isCur){ td.style.cursor='cell'; td.addEventListener('click',e=>{if(e.target===td||e.target===numEl)openNewSchedSlot(dateStr);}); }
+      tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  }
+  renderLegend(); renderCoachBank();
+}
+
+function buildPill(cs,dateStr,isCur){
+  const assignment=getAssignment(cs.id,dateStr), trainer=assignment?getTrainer(assignment.trainerId):null, ct=getClassType(cs.classTypeId);
+  const div=document.createElement('div');
+  if(trainer){ div.style.background=pillBg(trainer.color); div.style.color=pillText(trainer.color); div.classList.add('session-pill'); if(hiddenTrainers.has(trainer.id)) div.classList.add('trainer-hidden'); }
+  else div.classList.add('session-pill','unassigned-pill');
+  if(currentMode==='schedule') div.classList.add('schedule-mode');
+  const top=document.createElement('div'); top.className='pill-top';
+  const te=document.createElement('span'); te.className='pill-time'; te.textContent=fmt12(cs.time);
+  const be=document.createElement('span'); be.className='pill-badge'; be.textContent=ct?ct.code:'?'; if(trainer) be.style.background='rgba(0,0,0,.1)';
+  top.appendChild(te); top.appendChild(be);
+  if(cs.recurrence==='once'){ const oo=document.createElement('span'); oo.className='pill-oneoff'; oo.textContent='1×'; if(trainer) oo.style.background='rgba(0,0,0,.1)'; top.appendChild(oo); }
+  const ne=document.createElement('div'); ne.className='pill-name'; ne.textContent=cs.sessionName;
+  const ce=document.createElement('div'); ce.className='pill-coach'; ce.textContent=trainer?trainer.name.split(' ')[0]:'Unassigned';
+  div.appendChild(top); div.appendChild(ne); div.appendChild(ce);
+  if(currentMode==='assign'&&isCur){
+    div.addEventListener('dragover',e=>{e.preventDefault();div.classList.add('drag-over');});
+    div.addEventListener('dragleave',()=>div.classList.remove('drag-over'));
+    div.addEventListener('drop',e=>{e.preventDefault();div.classList.remove('drag-over');const tid=e.dataTransfer.getData('trainerId');if(!tid)return;openAssignModal(cs.id,dateStr,tid);});
+    div.addEventListener('click',()=>openAssignModal(cs.id,dateStr,assignment?assignment.trainerId:null));
+  } else if(currentMode==='schedule'){
+    div.addEventListener('click',e=>{e.stopPropagation();openEditSchedSlot(cs);});
+  }
+  return div;
+}
+
+function renderCoachBank(){
+  const el=document.getElementById('coachList'); el.innerHTML='';
+  vData().trainers.forEach(t=>{
+    const p=document.createElement('div'); p.className='coach-pill'+(hiddenTrainers.has(t.id)?' trainer-hidden':'');
+    p.textContent=t.name.split(' ')[0]; p.style.background=pillBg(t.color); p.style.color=pillText(t.color); p.style.borderColor='rgba(0,0,0,.06)';
+    p.draggable=true;
+    p.addEventListener('dragstart',e=>{e.dataTransfer.setData('trainerId',t.id);p.classList.add('dragging');});
+    p.addEventListener('dragend',()=>p.classList.remove('dragging'));
+    el.appendChild(p);
+  });
+}
+
+function renderLegend(){
+  const el=document.getElementById('legend'); el.innerHTML='';
+  const lc=document.createElement('div'); lc.className='legend-coaches';
+  vData().trainers.forEach(t=>{
+    const btn=document.createElement('div'); btn.className='legend-toggle'+(hiddenTrainers.has(t.id)?' off':'');
+    const d=document.createElement('div'); d.className='legend-dot'; d.style.background=t.color;
+    const n=document.createElement('span'); n.textContent=t.name.split(' ')[0];
+    btn.appendChild(d); btn.appendChild(n); btn.addEventListener('click',()=>toggleTrainer(t.id));
+    btn.title=(hiddenTrainers.has(t.id)?'Show ':'Hide ')+t.name.split(' ')[0]; lc.appendChild(btn);
+  });
+  el.appendChild(lc);
+  const dv=document.createElement('div'); dv.className='legend-divider'; el.appendChild(dv);
+  const lt=document.createElement('div'); lt.className='legend-types';
+  vData().classTypes.forEach(ct=>{
+    const row=document.createElement('div'); row.style.cssText='display:flex;align-items:center;gap:5px';
+    const b=document.createElement('span'); b.className='pill-badge'; b.textContent=ct.code; b.style.cssText='background:#e8e8e5;color:#555;font-size:10px';
+    const n=document.createElement('span'); n.textContent=ct.label; n.style.color='#555';
+    row.appendChild(b); row.appendChild(n); lt.appendChild(row);
+  });
+  el.appendChild(lt);
+  const hint=document.createElement('div'); hint.className='legend-hint';
+  hint.textContent=currentMode==='assign'?'click name to filter · drag coaches to assign · click slot to edit':'click name to filter · click slot to edit · click day to add one-off';
+  el.appendChild(hint);
+}
+
+// ================================================================
+// ASSIGNMENT MODAL
+// ================================================================
+let pendingAssign={slotId:null,dateStr:null,trainerId:null};
+function openAssignModal(slotId,dateStr,trainerId){
+  pendingAssign={slotId,dateStr,trainerId};
+  const cs=vData().classSchedule.find(c=>c.id===slotId), ct=getClassType(cs.classTypeId), d=parseDate(dateStr);
+  const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  document.getElementById('assignLockedInfo').innerHTML=
+    '<div class="li-row"><span class="li-label">Date</span><span class="li-val">'+d.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'</span></div>'+
+    '<div class="li-row"><span class="li-label">Day</span><span class="li-val">'+days[d.getDay()]+'</span></div>'+
+    '<div class="li-row"><span class="li-label">Time</span><span class="li-val">'+fmt12(cs.time)+'</span></div>'+
+    '<div class="li-row"><span class="li-label">Type</span><span class="li-val">'+(ct?ct.label:'')+'</span></div>'+
+    '<div class="li-row"><span class="li-label">Class</span><span class="li-val">'+cs.sessionName+'</span></div>'+
+    (cs.location?'<div class="li-row"><span class="li-label">Location</span><span class="li-val">'+cs.location+'</span></div>':'');
+  const sel=document.getElementById('assignCoachSel'); sel.innerHTML='<option value="">— Unassigned —</option>';
+  vData().trainers.forEach(t=>{const o=document.createElement('option');o.value=t.id;o.textContent=t.name;if(trainerId&&t.id===trainerId)o.selected=true;sel.appendChild(o);});
+  document.getElementById('scopeSection').style.display=cs.recurrence==='once'?'none':'';
+  document.querySelectorAll('.scope-opt').forEach(e=>e.classList.remove('selected'));
+  document.querySelectorAll('.scope-opt')[0].classList.add('selected');
+  document.querySelectorAll('.scope-opt input')[0].checked=true;
+  document.getElementById('rangeRow').style.display='none';
+  document.getElementById('rangeStart').value=dateStr; document.getElementById('rangeEnd').value=dateStr;
+  document.getElementById('assignOverlay').style.display='flex';
+}
+function selectScope(el,val){ document.querySelectorAll('.scope-opt').forEach(e=>e.classList.remove('selected')); el.classList.add('selected'); el.querySelector('input').checked=true; document.getElementById('rangeRow').style.display=val==='range'?'flex':'none'; }
+function saveAssignment(){
+  const slotId=pendingAssign.slotId, dateStr=pendingAssign.dateStr, trainerId=document.getElementById('assignCoachSel').value||null;
+  const cs=vData().classSchedule.find(c=>c.id===slotId), scope=cs.recurrence==='once'?'once':(document.querySelector('input[name="scope"]:checked').value), seriesId=uid();
+  let dates=[]; const d0=parseDate(dateStr), y=d0.getFullYear(), mo=d0.getMonth(), dim=new Date(y,mo+1,0).getDate();
+  if(scope==='once'){dates=[dateStr];}
+  else if(scope==='month'){for(let d=1;d<=dim;d++){const dt=new Date(y,mo,d);if(dt.getDay()===cs.dayOfWeek)dates.push(fmtDate(dt));}}
+  else if(scope==='forward'){for(let d=d0.getDate();d<=dim;d++){const dt=new Date(y,mo,d);if(dt.getDay()===cs.dayOfWeek)dates.push(fmtDate(dt));}}
+  else if(scope==='range'){const s=parseDate(document.getElementById('rangeStart').value),e=parseDate(document.getElementById('rangeEnd').value);let cur=new Date(s);while(cur<=e){if(cur.getDay()===cs.dayOfWeek)dates.push(fmtDate(new Date(cur)));cur.setDate(cur.getDate()+1);}}
+  else if(scope==='all'){const now=new Date();let cur=new Date(now.getFullYear()-1,0,1);const end=new Date(now.getFullYear()+1,11,31);while(cur<=end){if(cur.getDay()===cs.dayOfWeek)dates.push(fmtDate(new Date(cur)));cur.setDate(cur.getDate()+1);}}
+  dates.forEach(ds=>{vData().staffAssignments=vData().staffAssignments.filter(a=>!(a.scheduleSlotId===slotId&&a.date===ds));if(trainerId)vData().staffAssignments.push({id:uid(),scheduleSlotId:slotId,date:ds,trainerId,assignmentSeriesId:seriesId});});
+  closeModal('assignOverlay'); renderCalendar();
+}
+
+// ================================================================
+// SCHEDULE MODAL
+// ================================================================
+let editingSchedId=null, currentRecurrence='weekly';
+function setRecurrence(r){ currentRecurrence=r; document.getElementById('recurWeeklyBtn').classList.toggle('active',r==='weekly'); document.getElementById('recurOnceBtn').classList.toggle('active',r==='once'); document.getElementById('recurringFields').style.display=r==='weekly'?'':'none'; document.getElementById('oneoffFields').style.display=r==='once'?'':'none'; document.getElementById('schedActiveSection').style.display=r==='once'?'none':''; }
+function openNewSchedSlot(prefillDate){ editingSchedId=null; document.getElementById('schedModalTitle').textContent='Add Class'; document.getElementById('schedWarning').innerHTML=''; document.getElementById('schedDeleteBtn').style.display='none'; document.getElementById('recurrenceToggleSection').style.display=''; setRecurrence(prefillDate?'once':'weekly'); document.getElementById('schedDay').value='1'; document.getElementById('schedTime').value='09:00'; document.getElementById('schedName').value=''; document.getElementById('schedLoc').value=''; document.getElementById('schedActive').value='1'; document.getElementById('schedOneoffDate').value=prefillDate||fmtDate(new Date()); populateTypeSelect(); closeModal('settingsOverlay'); document.getElementById('schedOverlay').style.display='flex'; }
+function openEditSchedSlot(cs){ editingSchedId=cs.id; document.getElementById('schedModalTitle').textContent='Edit Class'; document.getElementById('schedWarning').innerHTML=''; document.getElementById('schedDeleteBtn').style.display='inline-flex'; document.getElementById('recurrenceToggleSection').style.display=''; setRecurrence(cs.recurrence||'weekly'); if(cs.recurrence==='once') document.getElementById('schedOneoffDate').value=cs.date||fmtDate(new Date()); else document.getElementById('schedDay').value=cs.dayOfWeek; document.getElementById('schedTime').value=cs.time; document.getElementById('schedName').value=cs.sessionName; document.getElementById('schedLoc').value=cs.location||''; document.getElementById('schedActive').value=cs.active?'1':'0'; populateTypeSelect(cs.classTypeId); document.getElementById('schedOverlay').style.display='flex'; }
+function populateTypeSelect(selected){ const sel=document.getElementById('schedType'); sel.innerHTML=''; vData().classTypes.forEach(ct=>{const o=document.createElement('option');o.value=ct.id;o.textContent=ct.label+' ('+ct.code+')';if(selected&&ct.id===selected)o.selected=true;sel.appendChild(o);}); }
+function saveSchedSlot(){
+  const time=document.getElementById('schedTime').value, ctId=document.getElementById('schedType').value, name=document.getElementById('schedName').value.trim(), loc=document.getElementById('schedLoc').value.trim(), active=document.getElementById('schedActive').value==='1';
+  if(!name){alert('Please enter a session name.');return;}
+  if(currentRecurrence==='once'){
+    const date=document.getElementById('schedOneoffDate').value; if(!date){alert('Please pick a date.');return;}
+    if(editingSchedId){const cs=vData().classSchedule.find(c=>c.id===editingSchedId);Object.assign(cs,{recurrence:'once',date,time,classTypeId:ctId,sessionName:name,location:loc,active:true});delete cs.dayOfWeek;}
+    else vData().classSchedule.push({id:uid(),recurrence:'once',date,time,classTypeId:ctId,sessionName:name,location:loc,active:true});
+  } else {
+    const dow=parseInt(document.getElementById('schedDay').value);
+    if(editingSchedId){const cs=vData().classSchedule.find(c=>c.id===editingSchedId);Object.assign(cs,{recurrence:'weekly',dayOfWeek:dow,time,classTypeId:ctId,sessionName:name,location:loc,active});delete cs.date;}
+    else vData().classSchedule.push({id:uid(),recurrence:'weekly',dayOfWeek:dow,time,classTypeId:ctId,sessionName:name,location:loc,active});
+  }
+  closeModal('schedOverlay'); renderCalendar(); renderSettingsRows();
+}
+function deleteSchedSlot(){
+  if(!editingSchedId) return;
+  if(vData().staffAssignments.some(a=>a.scheduleSlotId===editingSchedId)&&!confirm('Delete class and all its assignments?')) return;
+  vData().staffAssignments=vData().staffAssignments.filter(a=>a.scheduleSlotId!==editingSchedId);
+  const idx=vData().classSchedule.findIndex(c=>c.id===editingSchedId); if(idx>-1) vData().classSchedule.splice(idx,1);
+  closeModal('schedOverlay'); renderCalendar(); renderSettingsRows();
+}
+
+// ================================================================
+// SETTINGS
+// ================================================================
+function openSettings(){
+  renderSettingsRows();
+  // If GitHub was auto-connected from blob, show the note instead of manual fields
+  const auto = ghSettings.token && ghSettings.repo && !!ENCRYPTED_BLOB;
+  document.getElementById('ghAutoNote').style.display = auto ? 'block' : 'none';
+  document.getElementById('ghManualFields').style.display = auto ? 'none' : 'block';
+  if(!auto){ document.getElementById('ghToken').value=ghSettings.token; document.getElementById('ghRepo').value=ghSettings.repo; document.getElementById('ghBranch').value=ghSettings.branch||'main'; document.getElementById('ghStatus').innerHTML=''; }
+  document.getElementById('settingsOverlay').style.display='flex';
+  document.getElementById('ghSyncBtn').style.display = ghSettings.token&&ghSettings.repo ? 'flex' : 'none';
+}
+function renderSettingsRows(){
+  const tr=document.getElementById('trainerRows'); tr.innerHTML='';
+  vData().trainers.forEach((t,i)=>{
+    const row=document.createElement('div'); row.className='settings-row';
+    const sw=document.createElement('input'); sw.type='color'; sw.value=t.color; sw.className='color-swatch';
+    sw.addEventListener('input',e=>{t.color=e.target.value;renderCalendar();});
+    const ni=document.createElement('input'); ni.type='text'; ni.value=t.name;
+    ni.addEventListener('change',e=>{t.name=e.target.value;renderCalendar();});
+    const rm=document.createElement('button'); rm.className='rm-btn'; rm.textContent='✕';
+    rm.onclick=()=>{if(!confirm('Remove '+t.name+'?'))return;vData().staffAssignments=vData().staffAssignments.filter(a=>a.trainerId!==t.id);vData().trainers.splice(i,1);renderCalendar();renderSettingsRows();};
+    row.appendChild(sw);row.appendChild(ni);row.appendChild(rm);tr.appendChild(row);
+  });
+  const ct=document.getElementById('typeRows'); ct.innerHTML='';
+  vData().classTypes.forEach((c,i)=>{
+    const row=document.createElement('div'); row.className='settings-row';
+    const ci=document.createElement('input'); ci.type='text'; ci.value=c.code; ci.maxLength=3; ci.style.cssText='text-align:center;width:36px;padding:6px 4px;border:1px solid #ddd;border-radius:7px;font-size:13px;font-family:inherit';
+    ci.addEventListener('change',e=>{c.code=e.target.value.slice(0,3).toUpperCase();renderCalendar();});
+    const li=document.createElement('input'); li.type='text'; li.value=c.label;
+    li.addEventListener('change',e=>{c.label=e.target.value;renderCalendar();});
+    const rm=document.createElement('button'); rm.className='rm-btn'; rm.textContent='✕';
+    rm.onclick=()=>{if(!confirm('Remove '+c.label+'?'))return;vData().classTypes.splice(i,1);renderCalendar();renderSettingsRows();};
+    row.appendChild(ci);row.appendChild(li);row.appendChild(rm);ct.appendChild(row);
+  });
+  const sr=document.getElementById('schedRows'); sr.innerHTML='';
+  const days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  [...vData().classSchedule].sort((a,b)=>{
+    if(a.recurrence==='weekly'&&b.recurrence==='once') return -1;
+    if(a.recurrence==='once'&&b.recurrence==='weekly') return 1;
+    if(a.recurrence==='weekly') return a.dayOfWeek!==b.dayOfWeek?a.dayOfWeek-b.dayOfWeek:a.time.localeCompare(b.time);
+    return (a.date||'').localeCompare(b.date||'');
+  }).forEach(cs=>{
+    const ct2=getClassType(cs.classTypeId), row=document.createElement('div'); row.className='sched-row';
+    const dayLabel=cs.recurrence==='once'
+      ?'<span style="background:#e8f0fe;color:#1a4a8a;border-radius:4px;padding:1px 5px;font-size:11px;font-weight:600">'+parseDate(cs.date).toLocaleDateString('en-US',{month:'short',day:'numeric'})+'</span>'
+      :'<span style="font-weight:600;color:#555">'+days[cs.dayOfWeek]+'</span>';
+    row.innerHTML=dayLabel+'<span>'+fmt12(cs.time)+'</span><span class="pill-badge" style="background:#e8e8e5;color:#555">'+(ct2?ct2.code:'?')+'</span><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+cs.sessionName+'</span>'+(cs.recurrence==='once'?'<span style="font-size:10px;color:#999;font-style:italic">one-off</span>':'')+(cs.location?'<span style="color:#aaa;font-size:11px">'+cs.location+'</span>':'')+'<span style="color:'+(cs.active?'#0a7a3a':'#bbb')+';font-size:13px">'+(cs.active?'●':'○')+'</span>';
+    const eb=document.createElement('button'); eb.className='btn btn-ghost btn-sm'; eb.textContent='Edit'; eb.style.flexShrink='0';
+    eb.addEventListener('click',()=>openEditSchedSlot(cs));
+    const rm=document.createElement('button'); rm.className='rm-btn'; rm.textContent='✕';
+    rm.addEventListener('click',()=>{if(vData().staffAssignments.some(a=>a.scheduleSlotId===cs.id)&&!confirm('Delete class and all assignments?'))return;vData().staffAssignments=vData().staffAssignments.filter(a=>a.scheduleSlotId!==cs.id);const idx=vData().classSchedule.findIndex(c=>c.id===cs.id);if(idx>-1)vData().classSchedule.splice(idx,1);renderCalendar();renderSettingsRows();});
+    row.appendChild(eb);row.appendChild(rm);sr.appendChild(row);
+  });
+}
+function addTrainer(){vData().trainers.push({id:uid(),name:'New Coach',color:'#888888'});renderSettingsRows();renderCalendar();}
+function addClassType(){vData().classTypes.push({id:uid(),code:'X',label:'New Type'});renderSettingsRows();renderCalendar();}
+function saveGhSettings(){
+  ghSettings.token=document.getElementById('ghToken').value.trim();
+  ghSettings.repo=document.getElementById('ghRepo').value.trim();
+  ghSettings.branch=document.getElementById('ghBranch').value.trim()||'main';
+  if(!ghSettings.token||!ghSettings.repo){setGhStatus('err','Please fill in token and repository.');return;}
+  setGhStatus('loading','Testing connection…');
+  fetch('https://api.github.com/repos/'+ghSettings.repo,{headers:{'Authorization':'token '+ghSettings.token,'Accept':'application/vnd.github.v3+json'}})
+    .then(r=>{
+      if(r.ok){setGhStatus('ok','✓ Connected to '+ghSettings.repo);document.getElementById('ghSyncBtn').style.display='flex';}
+      else if(r.status===404) setGhStatus('err','Repo not found. Check owner/repo name.');
+      else if(r.status===401) setGhStatus('err','Authentication failed. Check your token.');
+      else setGhStatus('err','Error '+r.status);
+    }).catch(()=>setGhStatus('err','Network error.'));
+}
+function setGhStatus(type,msg){const el=document.getElementById('ghStatus');el.innerHTML='';el.className='gh-status '+type;el.textContent=msg;}
+
+// ================================================================
+// GITHUB SYNC
+// ================================================================
+function versionFilePath(vid){ return 'schedules/'+(vid==='master'?'master':vid)+'.json'; }
+async function githubPush(vid){
+  if(!ghSettings.token||!ghSettings.repo){alert('Configure GitHub settings first.');return;}
+  const v=getVersion(vid), path=versionFilePath(vid);
+  const content=btoa(unescape(encodeURIComponent(JSON.stringify({meta:{id:v.id,name:v.name,color:v.color,isMaster:v.isMaster,savedAt:new Date().toISOString()},data:v.data},null,2))));
+  let sha=null;
+  try{const r=await fetch('https://api.github.com/repos/'+ghSettings.repo+'/contents/'+path+'?ref='+ghSettings.branch,{headers:{'Authorization':'token '+ghSettings.token,'Accept':'application/vnd.github.v3+json'}});if(r.ok){const j=await r.json();sha=j.sha;}}catch(e){}
+  const body={message:'Update: '+v.name+' ('+new Date().toLocaleString()+')',content,branch:ghSettings.branch};
+  if(sha) body.sha=sha;
+  const res=await fetch('https://api.github.com/repos/'+ghSettings.repo+'/contents/'+path,{method:'PUT',headers:{'Authorization':'token '+ghSettings.token,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},body:JSON.stringify(body)});
+  if(res.ok) alert('✓ Saved "'+v.name+'" to GitHub ('+path+')');
+  else{const j=await res.json();alert('GitHub error: '+(j.message||res.status));}
+  if(document.getElementById('versionOverlay').style.display!=='none') renderVersionList();
+}
+async function githubSync(){ await githubPush(activeVersionId); }
+async function ghPull(silent){
+  if(!ghSettings.token||!ghSettings.repo){if(!silent)alert('Configure GitHub settings first.');return;}
+  let files=[];
+  try{
+    const r=await fetch('https://api.github.com/repos/'+ghSettings.repo+'/contents/schedules?ref='+ghSettings.branch,{headers:{'Authorization':'token '+ghSettings.token,'Accept':'application/vnd.github.v3+json'}});
+    if(r.status===404){if(!silent)alert('No "schedules" folder yet. Save a version first.');return;}
+    if(!r.ok){if(!silent)alert('Error listing files.');return;}
+    files=await r.json();
+  }catch(e){if(!silent)alert('Network error.');return;}
+  const jsonFiles=files.filter(f=>f.name.endsWith('.json')); if(!jsonFiles.length) return;
+  let pulled=0;
+  for(const f of jsonFiles){
+    try{
+      const r=await fetch(f.download_url), obj=await r.json();
+      if(!obj.meta||!obj.data) continue;
+      const ex=versions.find(v=>v.id===obj.meta.id);
+      if(ex){Object.assign(ex,{name:obj.meta.name,color:obj.meta.color,isMaster:obj.meta.isMaster,data:obj.data});pulled++;}
+      else{versions.push({id:obj.meta.id,name:obj.meta.name,color:obj.meta.color,isMaster:obj.meta.isMaster,createdAt:obj.meta.savedAt||new Date().toISOString(),data:obj.data});pulled++;}
+    }catch(e){}
+  }
+  if(!silent) alert('✓ Pulled '+pulled+' version'+(pulled!==1?'s':'')+' from GitHub.');
+  updateVersionPill(); renderCalendar();
+  if(document.getElementById('versionOverlay').style.display!=='none') renderVersionList();
+}
+
+// ================================================================
+// MODALS
+// ================================================================
+function closeModal(id){document.getElementById(id).style.display='none';}
+function overlayClick(e,id){if(e.target.id===id)closeModal(id);}
+</script>
+</body>
+</html>
