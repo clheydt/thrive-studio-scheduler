@@ -4,7 +4,7 @@
     "name": "Maternity Schedule",
     "color": "#16a34a",
     "isMaster": false,
-    "savedAt": "2026-06-04T16:51:57.310Z"
+    "savedAt": "2026-06-04T16:58:13.911Z"
   },
   "data": {
     "trainers": [
@@ -60520,13 +60520,6 @@
         "assignmentSeriesId": "id6cgdasl"
       },
       {
-        "id": "id2se42d6",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-06-06",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idycjfmgf"
-      },
-      {
         "id": "idczeahc9",
         "scheduleSlotId": "idpc5d6w8",
         "date": "2026-06-06",
@@ -62191,6 +62184,20 @@
         "date": "2026-09-28",
         "trainerId": "idbqxocdw",
         "assignmentSeriesId": "idbnbebct"
+      },
+      {
+        "id": "idz8v0nyp",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-06-06",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idlobtvri"
+      },
+      {
+        "id": "idx57fork",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-06-06",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idohzfr1g"
       }
     ]
   }
