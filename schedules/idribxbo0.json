@@ -4,14 +4,14 @@
     "name": "Maternity Schedule",
     "color": "#16a34a",
     "isMaster": false,
-    "savedAt": "2026-06-04T16:23:38.711Z"
+    "savedAt": "2026-06-04T16:39:29.931Z"
   },
   "data": {
     "trainers": [
       {
         "id": "t1",
         "name": "Ashley Mentzer",
-        "color": "#07ccda"
+        "color": "#0ee1de"
       },
       {
         "id": "t2",
@@ -10545,13 +10545,6 @@
         "id": "idc13q567",
         "scheduleSlotId": "idfpsp432",
         "date": "2026-06-09",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idlshwinl"
-      },
-      {
-        "id": "idbhp6j5p",
-        "scheduleSlotId": "idfpsp432",
-        "date": "2026-06-16",
         "trainerId": "idd35eygj",
         "assignmentSeriesId": "idlshwinl"
       },
@@ -60830,13 +60823,6 @@
         "assignmentSeriesId": "idaygtcj7"
       },
       {
-        "id": "id9cn8uns",
-        "scheduleSlotId": "idwm5xzru",
-        "date": "2026-06-15",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idaygtcj7"
-      },
-      {
         "id": "idlee5hqz",
         "scheduleSlotId": "idwm5xzru",
         "date": "2026-06-22",
@@ -62186,6 +62172,20 @@
         "date": "2026-09-06",
         "trainerId": "idbqxocdw",
         "assignmentSeriesId": "idmt7zhfs"
+      },
+      {
+        "id": "idbr609oz",
+        "scheduleSlotId": "idwm5xzru",
+        "date": "2026-06-15",
+        "trainerId": "t1",
+        "assignmentSeriesId": "iddtrj3ic"
+      },
+      {
+        "id": "idv14mt6r",
+        "scheduleSlotId": "idfpsp432",
+        "date": "2026-06-16",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idivbybah"
       }
     ]
   }
