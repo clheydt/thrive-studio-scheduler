@@ -4,19 +4,19 @@
     "name": "Maternity Schedule",
     "color": "#16a34a",
     "isMaster": false,
-    "savedAt": "2026-06-12T18:26:47.616Z"
+    "savedAt": "2026-08-11T19:57:31.635Z"
   },
   "data": {
     "trainers": [
       {
         "id": "t1",
         "name": "Ashley Mentzer",
-        "color": "#0ee1de"
+        "color": "#ecefef"
       },
       {
         "id": "t2",
         "name": "Erin Dugan",
-        "color": "#c7c7c7"
+        "color": "#75efff"
       },
       {
         "id": "t3",
@@ -26,11 +26,6 @@
       {
         "id": "t4",
         "name": "Dana Sherwood",
-        "color": "#c7c7c7"
-      },
-      {
-        "id": "t5",
-        "name": "Kayla Wintermyer",
         "color": "#c7c7c7"
       },
       {
@@ -49,11 +44,6 @@
         "color": "#c7c7c7"
       },
       {
-        "id": "idxvlymo2",
-        "name": "Kendra Snyder",
-        "color": "#c7c7c7"
-      },
-      {
         "id": "idbqxocdw",
         "name": "CANCELLED",
         "color": "#ff0000"
@@ -67,6 +57,11 @@
         "id": "id5mmyzmu",
         "name": "COVERAGE",
         "color": "#109be0"
+      },
+      {
+        "id": "id31rhalp",
+        "name": "Chelsea - Open Gym",
+        "color": "#888888"
       }
     ],
     "classTypes": [
@@ -1188,55 +1183,6 @@
         "assignmentSeriesId": "idhdha6j5"
       },
       {
-        "id": "idcml7gkn",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-09-14",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
-        "id": "idf63bcjd",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-09-21",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
-        "id": "idx39vjt1",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-09-28",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
-        "id": "id03uqjgh",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-10-05",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
-        "id": "id089ni1y",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-10-12",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
-        "id": "id6wfmpei",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-10-19",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
-        "id": "idp9qp3ix",
-        "scheduleSlotId": "idjrr8svj",
-        "date": "2026-10-26",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idhdha6j5"
-      },
-      {
         "id": "ide594mb7",
         "scheduleSlotId": "idjrr8svj",
         "date": "2026-11-02",
@@ -2182,55 +2128,6 @@
         "assignmentSeriesId": "idhyprsgf"
       },
       {
-        "id": "idtnadwpx",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-09-14",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
-        "id": "idbsf9avz",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-09-21",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
-        "id": "idf4q6ip6",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-09-28",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
-        "id": "idd96jnkw",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-10-05",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
-        "id": "id3j6rmv0",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-10-12",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
-        "id": "idd245woq",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-10-19",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
-        "id": "idwd0h5su",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-10-26",
-        "trainerId": "t4",
-        "assignmentSeriesId": "idhyprsgf"
-      },
-      {
         "id": "idui34sj6",
         "scheduleSlotId": "idlliwo3d",
         "date": "2026-11-02",
@@ -3172,55 +3069,6 @@
         "id": "id2qg83gj",
         "scheduleSlotId": "id4p3jslb",
         "date": "2026-06-01",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idu4zomq4",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-09-14",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idihnx1yd",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-09-21",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idil91qe9",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-09-28",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idvmhlu4p",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-10-05",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idnmdfhz8",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-10-12",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idem2e39f",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-10-19",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id1mmhri3"
-      },
-      {
-        "id": "idoqoqaz6",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-10-26",
         "trainerId": "t1",
         "assignmentSeriesId": "id1mmhri3"
       },
@@ -5115,55 +4963,6 @@
         "assignmentSeriesId": "idzgyq896"
       },
       {
-        "id": "id2swyvji",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-09-14",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
-        "id": "idr12v8rq",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-09-21",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
-        "id": "idyhzwazn",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-09-28",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
-        "id": "idv21f5gt",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-10-05",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
-        "id": "idr7inrpb",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-10-12",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
-        "id": "idkia94x0",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-10-19",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
-        "id": "id32k8a9t",
-        "scheduleSlotId": "idk5w85oy",
-        "date": "2026-10-26",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzgyq896"
-      },
-      {
         "id": "idyiyi6k2",
         "scheduleSlotId": "idk5w85oy",
         "date": "2026-11-02",
@@ -6193,13 +5992,6 @@
         "assignmentSeriesId": "idhq5g8fs"
       },
       {
-        "id": "idjhvb8lf",
-        "scheduleSlotId": "idqj2au32",
-        "date": "2026-09-14",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idhq5g8fs"
-      },
-      {
         "id": "ida6cjmud",
         "scheduleSlotId": "idqj2au32",
         "date": "2026-09-21",
@@ -6217,20 +6009,6 @@
         "id": "idam8bcm2",
         "scheduleSlotId": "idqj2au32",
         "date": "2026-10-05",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idhq5g8fs"
-      },
-      {
-        "id": "id1x85oy7",
-        "scheduleSlotId": "idqj2au32",
-        "date": "2026-10-12",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idhq5g8fs"
-      },
-      {
-        "id": "id6sz4z9b",
-        "scheduleSlotId": "idqj2au32",
-        "date": "2026-10-19",
         "trainerId": "t3",
         "assignmentSeriesId": "idhq5g8fs"
       },
@@ -7271,13 +7049,6 @@
         "assignmentSeriesId": "idsynhlr4"
       },
       {
-        "id": "idljtltdu",
-        "scheduleSlotId": "id65ohs5s",
-        "date": "2026-09-14",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idsynhlr4"
-      },
-      {
         "id": "idok67ar3",
         "scheduleSlotId": "id65ohs5s",
         "date": "2026-09-21",
@@ -7295,20 +7066,6 @@
         "id": "iduhzt3k5",
         "scheduleSlotId": "id65ohs5s",
         "date": "2026-10-05",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idsynhlr4"
-      },
-      {
-        "id": "idf574qdg",
-        "scheduleSlotId": "id65ohs5s",
-        "date": "2026-10-12",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idsynhlr4"
-      },
-      {
-        "id": "id2x7avrw",
-        "scheduleSlotId": "id65ohs5s",
-        "date": "2026-10-19",
         "trainerId": "t3",
         "assignmentSeriesId": "idsynhlr4"
       },
@@ -8349,13 +8106,6 @@
         "assignmentSeriesId": "id40d5bi0"
       },
       {
-        "id": "idpqayoau",
-        "scheduleSlotId": "id54b69y9",
-        "date": "2026-09-14",
-        "trainerId": "t3",
-        "assignmentSeriesId": "id40d5bi0"
-      },
-      {
         "id": "id9ynec8i",
         "scheduleSlotId": "id54b69y9",
         "date": "2026-09-21",
@@ -8373,20 +8123,6 @@
         "id": "idjp3yx5l",
         "scheduleSlotId": "id54b69y9",
         "date": "2026-10-05",
-        "trainerId": "t3",
-        "assignmentSeriesId": "id40d5bi0"
-      },
-      {
-        "id": "idx2fsk2p",
-        "scheduleSlotId": "id54b69y9",
-        "date": "2026-10-12",
-        "trainerId": "t3",
-        "assignmentSeriesId": "id40d5bi0"
-      },
-      {
-        "id": "idi6sc3eh",
-        "scheduleSlotId": "id54b69y9",
-        "date": "2026-10-19",
         "trainerId": "t3",
         "assignmentSeriesId": "id40d5bi0"
       },
@@ -9353,55 +9089,6 @@
         "id": "idjub5nhn",
         "scheduleSlotId": "idw27xdf7",
         "date": "2026-08-31",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "idoybizec",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-09-14",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "idu701p6s",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-09-21",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "ideqxoxjc",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-09-28",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "idjkr55ao",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-10-05",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "idoj91s5t",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-10-12",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "idyx1htc9",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-10-19",
-        "trainerId": "t2",
-        "assignmentSeriesId": "idj4wb2z4"
-      },
-      {
-        "id": "idtjlues9",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-10-26",
         "trainerId": "t2",
         "assignmentSeriesId": "idj4wb2z4"
       },
@@ -10410,41 +10097,6 @@
         "id": "id1rdxsph",
         "scheduleSlotId": "idfpsp432",
         "date": "2026-08-25",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idlshwinl"
-      },
-      {
-        "id": "id6e60jhw",
-        "scheduleSlotId": "idfpsp432",
-        "date": "2026-09-01",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idlshwinl"
-      },
-      {
-        "id": "idguv4bza",
-        "scheduleSlotId": "idfpsp432",
-        "date": "2026-09-08",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idlshwinl"
-      },
-      {
-        "id": "idya6b9bt",
-        "scheduleSlotId": "idfpsp432",
-        "date": "2026-09-15",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idlshwinl"
-      },
-      {
-        "id": "id6shum3n",
-        "scheduleSlotId": "idfpsp432",
-        "date": "2026-09-22",
-        "trainerId": "idd35eygj",
-        "assignmentSeriesId": "idlshwinl"
-      },
-      {
-        "id": "idqdbwqmj",
-        "scheduleSlotId": "idfpsp432",
-        "date": "2026-09-29",
         "trainerId": "idd35eygj",
         "assignmentSeriesId": "idlshwinl"
       },
@@ -11495,13 +11147,6 @@
         "id": "idw9wjghk",
         "scheduleSlotId": "id01ag3ev",
         "date": "2026-08-25",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idge1gonb"
-      },
-      {
-        "id": "id2lkszrt",
-        "scheduleSlotId": "id01ag3ev",
-        "date": "2026-09-01",
         "trainerId": "t3",
         "assignmentSeriesId": "idge1gonb"
       },
@@ -12580,13 +12225,6 @@
         "id": "id6el247g",
         "scheduleSlotId": "idn585zeo",
         "date": "2026-08-25",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idsoaww5i"
-      },
-      {
-        "id": "id5u29l2k",
-        "scheduleSlotId": "idn585zeo",
-        "date": "2026-09-01",
         "trainerId": "t3",
         "assignmentSeriesId": "idsoaww5i"
       },
@@ -18051,20 +17689,6 @@
         "assignmentSeriesId": "idc9jn3x9"
       },
       {
-        "id": "id6s10mze",
-        "scheduleSlotId": "idi2v91wl",
-        "date": "2026-09-15",
-        "trainerId": "id08akyks",
-        "assignmentSeriesId": "idc9jn3x9"
-      },
-      {
-        "id": "id0ysks2x",
-        "scheduleSlotId": "idi2v91wl",
-        "date": "2026-09-22",
-        "trainerId": "id08akyks",
-        "assignmentSeriesId": "idc9jn3x9"
-      },
-      {
         "id": "idccghs0a",
         "scheduleSlotId": "idi2v91wl",
         "date": "2026-09-29",
@@ -19139,20 +18763,6 @@
         "id": "idiczx2ed",
         "scheduleSlotId": "idj460jpy",
         "date": "2026-09-08",
-        "trainerId": "id08akyks",
-        "assignmentSeriesId": "idy5wgfn2"
-      },
-      {
-        "id": "idzvd123e",
-        "scheduleSlotId": "idj460jpy",
-        "date": "2026-09-15",
-        "trainerId": "id08akyks",
-        "assignmentSeriesId": "idy5wgfn2"
-      },
-      {
-        "id": "id35nttlv",
-        "scheduleSlotId": "idj460jpy",
-        "date": "2026-09-22",
         "trainerId": "id08akyks",
         "assignmentSeriesId": "idy5wgfn2"
       },
@@ -22349,69 +21959,6 @@
         "assignmentSeriesId": "idzkt536l"
       },
       {
-        "id": "idvfpop31",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-09-01",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "idka9comj",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-09-08",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "idwzvagzj",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-09-15",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "idjd84d4z",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-09-22",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "idsxck4tm",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-09-29",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "idfqxbv30",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-10-06",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "id9chcdbb",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-10-13",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "id6ipoibl",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-10-20",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
-        "id": "ida650qgn",
-        "scheduleSlotId": "id8dpr3b7",
-        "date": "2026-10-27",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idzkt536l"
-      },
-      {
         "id": "idmz6ksxb",
         "scheduleSlotId": "id8dpr3b7",
         "date": "2026-11-03",
@@ -24463,69 +24010,6 @@
         "assignmentSeriesId": "idszyymf4"
       },
       {
-        "id": "idx0tyin3",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-09-02",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idlmjr1a6",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-09-09",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idegqajq6",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-09-16",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idzzww8ej",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-09-23",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idi9zc7ig",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-09-30",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "ide184bmq",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-10-07",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idr1crneo",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-10-14",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idc93wdu5",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-10-21",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
-        "id": "idthae65q",
-        "scheduleSlotId": "id69soskc",
-        "date": "2026-10-28",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idszyymf4"
-      },
-      {
         "id": "id7v6k8fk",
         "scheduleSlotId": "id69soskc",
         "date": "2026-11-04",
@@ -25481,69 +24965,6 @@
         "id": "id16k2348",
         "scheduleSlotId": "idegbcce3",
         "date": "2026-07-01",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "idzx38j5w",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-09-02",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "idud8vt0x",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-09-09",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "idwoaomlo",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-09-16",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "idzzamqut",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-09-23",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "idaqslq9x",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-09-30",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "idqrb7t7l",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-10-07",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "id14d7w3n",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-10-14",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "id12z582n",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-10-21",
-        "trainerId": "t1",
-        "assignmentSeriesId": "ids8jt2ez"
-      },
-      {
-        "id": "id41jqq9k",
-        "scheduleSlotId": "idegbcce3",
-        "date": "2026-10-28",
         "trainerId": "t1",
         "assignmentSeriesId": "ids8jt2ez"
       },
@@ -29538,20 +28959,6 @@
         "assignmentSeriesId": "idn6oec7i"
       },
       {
-        "id": "idluf2swq",
-        "scheduleSlotId": "idygcl63o",
-        "date": "2026-09-16",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idn6oec7i"
-      },
-      {
-        "id": "idxhq5pdi",
-        "scheduleSlotId": "idygcl63o",
-        "date": "2026-09-23",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idn6oec7i"
-      },
-      {
         "id": "id4sstfo3",
         "scheduleSlotId": "idygcl63o",
         "date": "2026-09-30",
@@ -30626,20 +30033,6 @@
         "id": "idyevtk9o",
         "scheduleSlotId": "idnssy94z",
         "date": "2026-09-09",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idmjqrkpm"
-      },
-      {
-        "id": "id3sgne4h",
-        "scheduleSlotId": "idnssy94z",
-        "date": "2026-09-16",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idmjqrkpm"
-      },
-      {
-        "id": "idykfrmb6",
-        "scheduleSlotId": "idnssy94z",
-        "date": "2026-09-23",
         "trainerId": "t3",
         "assignmentSeriesId": "idmjqrkpm"
       },
@@ -31722,20 +31115,6 @@
         "assignmentSeriesId": "idyc4kiqa"
       },
       {
-        "id": "id8sr7twf",
-        "scheduleSlotId": "idugjzac5",
-        "date": "2026-09-16",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idyc4kiqa"
-      },
-      {
-        "id": "idbwdpgo0",
-        "scheduleSlotId": "idugjzac5",
-        "date": "2026-09-23",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idyc4kiqa"
-      },
-      {
         "id": "idqic9bys",
         "scheduleSlotId": "idugjzac5",
         "date": "2026-09-30",
@@ -32807,41 +32186,6 @@
         "assignmentSeriesId": "id04y73db"
       },
       {
-        "id": "id6j5snr5",
-        "scheduleSlotId": "idqzdluob",
-        "date": "2026-09-02",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id04y73db"
-      },
-      {
-        "id": "iday2qnem",
-        "scheduleSlotId": "idqzdluob",
-        "date": "2026-09-09",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id04y73db"
-      },
-      {
-        "id": "idlrtr1d6",
-        "scheduleSlotId": "idqzdluob",
-        "date": "2026-09-16",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id04y73db"
-      },
-      {
-        "id": "id2db5y3l",
-        "scheduleSlotId": "idqzdluob",
-        "date": "2026-09-23",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id04y73db"
-      },
-      {
-        "id": "id49fvra7",
-        "scheduleSlotId": "idqzdluob",
-        "date": "2026-09-30",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id04y73db"
-      },
-      {
         "id": "id4hi097d",
         "scheduleSlotId": "idqzdluob",
         "date": "2026-10-07",
@@ -33295,1091 +32639,6 @@
         "date": "2027-12-29",
         "trainerId": "t1",
         "assignmentSeriesId": "id04y73db"
-      },
-      {
-        "id": "idpgxybhf",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-01-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id98l2l1v",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-01-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idr6hv5l9",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-01-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idk1ffq4c",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-01-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idzgwl865",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-01-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idlfdnij7",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-02-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idgwhr12g",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-02-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ida3qbs6a",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-02-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id77sgteo",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-02-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idjxfbmki",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-03-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idoublpxv",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-03-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idfbp0vcb",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-03-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id5j6w2lm",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-03-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idgribtx6",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-04-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idetg2yyh",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-04-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id0alt51x",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-04-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4sfqjv7",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-04-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idaslg4xe",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-05-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ido2juk9t",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-05-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4sbef5h",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-05-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idugfy5j7",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-05-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idfqogxte",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-05-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id81amw8d",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-06-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id3ljktxb",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-06-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id3oefqni",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-06-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idg1ova1l",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-06-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id1s6qv8i",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-07-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id5x66pl2",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-07-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id3p64uw3",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-07-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idt9liy5s",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-07-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id2g01wu3",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-07-31",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id6a1bso3",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-08-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id8609hf0",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-08-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idkjnle3g",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-08-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id60g21r7",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-08-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id7sy4p55",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-09-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idzf6ka57",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-09-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id9ofmm5o",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-09-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idsqu2cle",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-09-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idxolgbfb",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-10-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idhhbakws",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-10-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idx5tvfa1",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-10-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ido7zy721",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-10-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idmlx6phr",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-10-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idnq7w59b",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-11-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idm0ilr3n",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-11-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idgrlge37",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-11-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4sal7r2",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-11-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id1z1mivi",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-12-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id5s4ydgy",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-12-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id8mirx65",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-12-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idvj4csq5",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2025-12-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idgygd3od",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-01-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idj03fzi4",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-01-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "iddad2rw5",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-01-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idormcbto",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-01-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4nr9kv5",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-01-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ida33hptf",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-02-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id9h9mpud",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-02-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id9nkn3em",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-02-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idktxb2rh",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-02-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id1sgoa34",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-03-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idn65wi7j",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-03-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idiq8jjaa",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-03-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idr32sbnc",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-03-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idycxzfla",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-04-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idyufcw9z",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-04-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id0cbq8af",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-04-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ida4hhiz6",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-04-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idpi7weei",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-04-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id9jxnp87",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-05-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idsmvuiww",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-05-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id7hn1h8x",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-05-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4bhtg9m",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-05-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idedkqnqn",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-06-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id0npg7a2",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-06-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idby77w4v",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-06-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idtk04dtr",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-06-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idc0lppsp",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-07-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4m02nqa",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-07-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idh3fai1s",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-07-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idqtj42fi",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-07-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id3cyf0qb",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-08-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idwsq2sah",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-08-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idfyxc95i",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-08-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idmlpsyup",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-09-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id7mhi7vp",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-09-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "iddsc2255",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-09-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idw4dl45l",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-09-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idg68f11r",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-10-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idlwxuxd1",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-10-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "iddvd8576",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-10-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idu79b2b9",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-10-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id12pey53",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-10-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id7e23h1g",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-11-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id98cp8r4",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-11-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idyfeti29",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-11-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idy0y0vz0",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-11-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idiym2vi9",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-12-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idaa24rry",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-12-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idcwwygij",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-12-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idbgu4b1b",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-12-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idzzl3eij",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2026-12-31",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "iddverv0d",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-01-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idyrbb7r7",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-01-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idyc0g8me",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-01-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idui2xpvq",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-01-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idp4kj4e6",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-02-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idmogazkt",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-02-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idvaaihu6",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-02-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id52br3cq",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-02-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id43tw0ou",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-03-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idxe21ft5",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-03-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idd4ykqzi",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-03-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idequdr0p",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-03-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idwrisyoz",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-04-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idsr6f23v",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-04-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id8m5oxv0",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-04-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idt36x1bz",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-04-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id3c9xs7o",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-04-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id4a7s61i",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-05-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id7lfiw7c",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-05-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idggy9lwe",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-05-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idj5t2v9c",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-05-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idnbkkq12",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-06-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idkgz4xi4",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-06-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id2otybni",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-06-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id3898nnj",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-06-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idhbk20jo",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-07-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idv2qrouw",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-07-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idtunqsrn",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-07-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id038b449",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-07-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idbaquiuq",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-07-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idjufld0f",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-08-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idd61hqua",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-08-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ida37mtaj",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-08-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id44d6b6v",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-08-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idh1l00t0",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-09-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id2sx5k96",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-09-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idqrjq5t4",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-09-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idnx0ayoo",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-09-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "id95cx3n2",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-09-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idgk1egz0",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-10-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idksakbon",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-10-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idbdnkn0q",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-10-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idiv1p5d1",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-10-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idcremr9g",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-11-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idxvs13ur",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-11-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idmge4yik",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-11-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idot1es2i",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-11-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idv2uptq1",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-12-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idqweqvzs",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-12-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "ida59aiwq",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-12-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idy9gbdlp",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-12-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
-      },
-      {
-        "id": "idmcnul0e",
-        "scheduleSlotId": "idhjvjx6s",
-        "date": "2027-12-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idrl6lrj2"
       },
       {
         "id": "idwshn86u",
@@ -44833,69 +43092,6 @@
         "assignmentSeriesId": "idaqr4vgl"
       },
       {
-        "id": "idzek5uk1",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-09-03",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "idfjde6kc",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-09-10",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "idel2xhom",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-09-17",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "id3fup870",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-09-24",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "idmpf38a8",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-10-01",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "id2cyrw2s",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-10-08",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "id7cv8pne",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-10-15",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "idhy91yqn",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-10-22",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "id06p5g6g",
-        "scheduleSlotId": "id1i4mar0",
-        "date": "2026-10-29",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
         "id": "idp1imjbe",
         "scheduleSlotId": "id1i4mar0",
         "date": "2026-11-05",
@@ -45321,1049 +43517,6 @@
         "date": "2027-12-30",
         "trainerId": "t1",
         "assignmentSeriesId": "idaqr4vgl"
-      },
-      {
-        "id": "idus4ck7l",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-01-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwobrlgo",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-01-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idbgu849r",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-01-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idq7r3jkg",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-01-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idfjs8uqu",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-01-31",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idqglemmd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-02-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idck1jiuv",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-02-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idnd5xrb7",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-02-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idqii2byn",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-02-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwlsjwhd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-03-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idh2d97bh",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-03-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id88ep4g6",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-03-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idgchrdjd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-03-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id6kkd93u",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-04-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idc4z3iiy",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-04-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idqqmytzj",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-04-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idj20bmv4",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-04-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id2qipxdl",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-05-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwowqe6g",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-05-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8m9b1lv",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-05-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idi4uaqhn",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-05-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idn9zb0wt",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-05-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idlceduxl",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-06-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "iddzh38cc",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-06-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idai6wpo1",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-06-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id4u1zyux",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-06-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idmdb6c6s",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-07-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idvm4d3hi",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-07-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idp10bw57",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-07-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id5b9fnnl",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-07-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idakgiw9l",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-08-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id2nvszjn",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-08-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idjoiyq5y",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-08-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idyu7mtgo",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-08-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idjqojzzd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-08-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idlbv77sf",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-09-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idb368bul",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-09-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idlevxniu",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-09-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idcm4mmig",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-09-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idxgbwdqy",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-10-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idc2an69z",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-10-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id7g7z0l7",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-10-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idnvemyr9",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-10-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idgssi8m5",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-10-31",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id5pw3toa",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-11-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idh6bokvd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-11-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idf5lpcgz",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-11-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idrv2im1h",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-11-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idqoowalw",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-12-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id5k1qs1p",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-12-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id4vg8b8v",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-12-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwa6729u",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2025-12-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "ido2vz4xf",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-01-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idedh8c6u",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-01-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idahfie1i",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-01-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idhsfd00z",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-01-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8nsdcc6",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-01-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idp9yrbq4",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-02-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idi3ou79n",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-02-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8y4l69l",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-02-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id63hcc70",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-02-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idddfqf4r",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-03-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idah1fwsd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-03-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idqp36sbm",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-03-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idrdsq8cs",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-03-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idd9xnudt",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-04-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idrceuz2d",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-04-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwbpfbp7",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-04-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idioctofa",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-04-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idkgnt7ko",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-05-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idfr5ppb1",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-05-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idj2lzvqy",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-05-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "iddf50rwr",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-05-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8xqj0dm",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-05-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idhadyfvf",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-06-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idr52kbg2",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-06-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id4mcbz7v",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-06-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id907leut",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-06-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id0hnt0b3",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-08-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8mcutaz",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-09-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idyujtk6m",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-09-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id84sc2or",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-09-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idhr499yu",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-09-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idlvnwoli",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-10-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idi12z9gy",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-10-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "ids1gushs",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-10-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id2zzbrot",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-10-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idc3v7po3",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-10-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id12ezhum",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-11-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idff3yns5",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-11-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "ida76dj9x",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-11-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id0mww4jg",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-11-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8maw2ma",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-12-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idaifo5hj",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-12-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id3o0nylh",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-12-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idc480xyp",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-12-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id6w2fl9t",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-01-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idh0ym256",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-01-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idewblcch",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-01-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idkn5jm65",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-01-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idmz218a4",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-01-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idedjjr3i",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-02-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idk37pkzz",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-02-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id6pc35rt",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-02-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id6albb1a",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-02-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idepi5y8c",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-03-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idg9ramyx",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-03-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id3plqpf2",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-03-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwtnglg5",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-03-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "iduh4pbcr",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-04-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwdu8ch6",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-04-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id1l4434l",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-04-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id55bvauv",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-04-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idfmnezbp",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-04-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idprjhvha",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-05-07",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idtvn7src",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-05-14",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "iduss50ts",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-05-21",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id27atbm2",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-05-28",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "iduqqf7md",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-06-04",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idi1dbimd",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-06-11",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idpfnru1h",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-06-18",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id304ntw5",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-06-25",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "ide4hvvxv",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-07-02",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idenx4nnh",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-07-09",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idpzli74d",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-07-16",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id36m0hlc",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-07-23",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id01e03v0",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-07-30",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id6yryb6v",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-08-06",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idrz4vgnr",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-08-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idsjjwgjo",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-08-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idf86txoj",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-08-27",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id22o7td5",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-09-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idg75ifa8",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-09-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idwqgpxfq",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-09-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idgsub3p8",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-09-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idh7ob7ns",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-10-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id7o4bz7t",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-10-08",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id7fwri8i",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-10-15",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id8o85uab",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-10-22",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idrddzc95",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-10-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idjdiue5z",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-11-05",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idim293j5",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-11-12",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idjjav4gq",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-11-19",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id9vvhuc0",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-11-26",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idsnnt4bh",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-12-03",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "iddweb7rs",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-12-10",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id5pxoglf",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-12-17",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "idkxgfc6e",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-12-24",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
-      },
-      {
-        "id": "id4pbsu85",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2027-12-31",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idl1igyp3"
       },
       {
         "id": "idinufhuf",
@@ -49169,69 +46322,6 @@
         "id": "idjqev4ga",
         "scheduleSlotId": "id7poe43p",
         "date": "2026-08-28",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "id27dovbi",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-09-04",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "idgyk8318",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-09-11",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "id9a970u8",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-09-18",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "id2lisgn2",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-09-25",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "idbs1pkjx",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-10-02",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "idfb1980g",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-10-09",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "iditzdcys",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-10-16",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "idtj70cj6",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-10-23",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt7ss284"
-      },
-      {
-        "id": "idtn1p101",
-        "scheduleSlotId": "id7poe43p",
-        "date": "2026-10-30",
         "trainerId": "t1",
         "assignmentSeriesId": "idt7ss284"
       },
@@ -53562,55 +50652,6 @@
         "assignmentSeriesId": "idt9eaih3"
       },
       {
-        "id": "idrtisoul",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-09-13",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
-        "id": "idms2kkyw",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-09-20",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
-        "id": "iduwih6xj",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-09-27",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
-        "id": "idx042gsn",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-10-04",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
-        "id": "idg02g6oj",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-10-11",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
-        "id": "idip8o3tz",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-10-18",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
-        "id": "idb2nlop0",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-10-25",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idt9eaih3"
-      },
-      {
         "id": "idxnmugkl",
         "scheduleSlotId": "idyoan863",
         "date": "2026-11-01",
@@ -54640,55 +51681,6 @@
         "assignmentSeriesId": "id2a417e4"
       },
       {
-        "id": "id2e6vu6t",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-09-13",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
-        "id": "id0vxwro1",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-09-20",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
-        "id": "idpkoo1hm",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-09-27",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
-        "id": "id634k7lv",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-10-04",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
-        "id": "idgn0fskt",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-10-11",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
-        "id": "idk5ocalf",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-10-18",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
-        "id": "id3p24wao",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-10-25",
-        "trainerId": "t1",
-        "assignmentSeriesId": "id2a417e4"
-      },
-      {
         "id": "iddfr14ot",
         "scheduleSlotId": "id6uud1do",
         "date": "2026-11-01",
@@ -55630,55 +52622,6 @@
         "id": "iduf0bz42",
         "scheduleSlotId": "idhv0ymcv",
         "date": "2026-05-30",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "idwpq9cur",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-09-12",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "id6sm4xa2",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-09-19",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "id8svgeyi",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-09-26",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "idykacfhe",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-10-03",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "idha2zd1s",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-10-10",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "idlgaxwy5",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-10-17",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idsnysyho"
-      },
-      {
-        "id": "idmkkontq",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-10-24",
         "trainerId": "t6",
         "assignmentSeriesId": "idsnysyho"
       },
@@ -56635,55 +53578,6 @@
         "assignmentSeriesId": "idobpfevq"
       },
       {
-        "id": "id3gjeau9",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-09-12",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
-        "id": "idu8pi3ie",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-09-19",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
-        "id": "id7dt7aef",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-09-26",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
-        "id": "idot6guou",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-10-03",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
-        "id": "id6e08qsv",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-10-10",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
-        "id": "id1jxuohs",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-10-17",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
-        "id": "idknrgo3m",
-        "scheduleSlotId": "idpc5d6w8",
-        "date": "2026-10-24",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idobpfevq"
-      },
-      {
         "id": "id18xh2g6",
         "scheduleSlotId": "idpc5d6w8",
         "date": "2026-10-31",
@@ -57632,55 +54526,6 @@
         "id": "idcjykhmu",
         "scheduleSlotId": "idl9axnpa",
         "date": "2026-08-29",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idq8eg2fn",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-09-12",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idkbfltlp",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-09-19",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idiv954eh",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-09-26",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idohtlmly",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-10-03",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idosyqkcu",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-10-10",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idchtr8av",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-10-17",
-        "trainerId": "t6",
-        "assignmentSeriesId": "idmrvhnwo"
-      },
-      {
-        "id": "idwcb08mq",
-        "scheduleSlotId": "idl9axnpa",
-        "date": "2026-10-24",
         "trainerId": "t6",
         "assignmentSeriesId": "idmrvhnwo"
       },
@@ -58654,34 +55499,6 @@
         "id": "idxm7gkpr",
         "scheduleSlotId": "idkco7k4m",
         "date": "2026-06-29",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idae5p0rr"
-      },
-      {
-        "id": "idqx5115l",
-        "scheduleSlotId": "idkco7k4m",
-        "date": "2026-10-05",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idae5p0rr"
-      },
-      {
-        "id": "idpwb8qo0",
-        "scheduleSlotId": "idkco7k4m",
-        "date": "2026-10-12",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idae5p0rr"
-      },
-      {
-        "id": "id0l1t692",
-        "scheduleSlotId": "idkco7k4m",
-        "date": "2026-10-19",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idae5p0rr"
-      },
-      {
-        "id": "id5o4xex5",
-        "scheduleSlotId": "idkco7k4m",
-        "date": "2026-10-26",
         "trainerId": "t1",
         "assignmentSeriesId": "idae5p0rr"
       },
@@ -60415,13 +57232,6 @@
         "assignmentSeriesId": "idsfjivbl"
       },
       {
-        "id": "idn780efq",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-06-13",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idgybrbno"
-      },
-      {
         "id": "iduws877f",
         "scheduleSlotId": "idv5pzeqq",
         "date": "2026-06-13",
@@ -60455,13 +57265,6 @@
         "date": "2026-06-20",
         "trainerId": "t1",
         "assignmentSeriesId": "idtemu2lu"
-      },
-      {
-        "id": "idk56ouex",
-        "scheduleSlotId": "idhv0ymcv",
-        "date": "2026-06-20",
-        "trainerId": "t5",
-        "assignmentSeriesId": "id96n2ed6"
       },
       {
         "id": "idi6c3anx",
@@ -60945,20 +57748,6 @@
         "date": "2026-07-02",
         "trainerId": "idd35eygj",
         "assignmentSeriesId": "idz5w4mcb"
-      },
-      {
-        "id": "idqrx4bjd",
-        "scheduleSlotId": "idngae7zh",
-        "date": "2026-07-01",
-        "trainerId": "t5",
-        "assignmentSeriesId": "idldeimxz"
-      },
-      {
-        "id": "id6gpu8ex",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-06-29",
-        "trainerId": "t5",
-        "assignmentSeriesId": "iduqzzaho"
       },
       {
         "id": "idk88zaye",
@@ -61549,20 +58338,6 @@
         "assignmentSeriesId": "idpjztcdv"
       },
       {
-        "id": "idlix5e0b",
-        "scheduleSlotId": "idlliwo3d",
-        "date": "2026-09-07",
-        "trainerId": "idbqxocdw",
-        "assignmentSeriesId": "id8tjqn3r"
-      },
-      {
-        "id": "idnq26a4y",
-        "scheduleSlotId": "id4p3jslb",
-        "date": "2026-09-07",
-        "trainerId": "idbqxocdw",
-        "assignmentSeriesId": "idu7ybl98"
-      },
-      {
         "id": "idywyz1cj",
         "scheduleSlotId": "idw27xdf7",
         "date": "2026-09-07",
@@ -61645,69 +58420,6 @@
         "date": "2026-06-06",
         "trainerId": "idbqxocdw",
         "assignmentSeriesId": "idohzfr1g"
-      },
-      {
-        "id": "idn0cfv5q",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-06-15",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "idvo8b6zl",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-06-22",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "idbv1k8ma",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-06-29",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "id1zbtlxj",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-07-06",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "id0kl5yu4",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-07-13",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "idvjyk1q6",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-07-20",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "id5n7gskk",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-07-27",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "idksz1o12",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-08-03",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
-      },
-      {
-        "id": "idxov7cij",
-        "scheduleSlotId": "idw27xdf7",
-        "date": "2026-08-10",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id6awp5qy"
       },
       {
         "id": "idto5zjdl",
@@ -61794,13 +58506,6 @@
         "assignmentSeriesId": "id8xdhfda"
       },
       {
-        "id": "idh8onon3",
-        "scheduleSlotId": "idwm5xzru",
-        "date": "2026-09-07",
-        "trainerId": "t2",
-        "assignmentSeriesId": "id8xdhfda"
-      },
-      {
         "id": "id92gyyhj",
         "scheduleSlotId": "idwm5xzru",
         "date": "2026-09-14",
@@ -61848,48 +58553,6 @@
         "date": "2026-10-26",
         "trainerId": "t2",
         "assignmentSeriesId": "id8xdhfda"
-      },
-      {
-        "id": "idyvay5gg",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-07-10",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id1mofjlh"
-      },
-      {
-        "id": "id0we4y0a",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-07-17",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id1mofjlh"
-      },
-      {
-        "id": "idjsroz10",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-07-24",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id1mofjlh"
-      },
-      {
-        "id": "idzn0fwq3",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-07-31",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id1mofjlh"
-      },
-      {
-        "id": "idbwjc8f6",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-08-07",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id1mofjlh"
-      },
-      {
-        "id": "idpbim0hi",
-        "scheduleSlotId": "idrjepyj6",
-        "date": "2026-08-14",
-        "trainerId": "idxvlymo2",
-        "assignmentSeriesId": "id1mofjlh"
       },
       {
         "id": "id05fkjyf",
@@ -61951,69 +58614,6 @@
         "id": "idemhefym",
         "scheduleSlotId": "id2jgrlpt",
         "date": "2026-08-26",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idv6x9w0b",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-09-02",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idzjwixcy",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-09-09",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idn49j3xl",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-09-16",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "id1odfzwe",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-09-23",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idi0zyhwj",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-09-30",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idb5budyb",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-10-07",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idrh1obrp",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-10-14",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idb46ei4u",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-10-21",
-        "trainerId": "t1",
-        "assignmentSeriesId": "idn2xbn2y"
-      },
-      {
-        "id": "idkgsceml",
-        "scheduleSlotId": "id2jgrlpt",
-        "date": "2026-10-28",
         "trainerId": "t1",
         "assignmentSeriesId": "idn2xbn2y"
       },
@@ -62198,6 +58798,1364 @@
         "date": "2026-11-25",
         "trainerId": "t2",
         "assignmentSeriesId": "idt8w4qqq"
+      },
+      {
+        "id": "idw0rvump",
+        "scheduleSlotId": "idwm5xzru",
+        "date": "2026-09-07",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idhx0reoz"
+      },
+      {
+        "id": "idgjk4w9m",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-09-12",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idby6ws30"
+      },
+      {
+        "id": "id797fmcs",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-09-12",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "ideq1tkhl"
+      },
+      {
+        "id": "id9gab9x3",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-09-13",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idf8a0nmf"
+      },
+      {
+        "id": "idch1wkfs",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-09-13",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id82odl1r"
+      },
+      {
+        "id": "idc2lhb9l",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-09-12",
+        "trainerId": "t1",
+        "assignmentSeriesId": "iduai7q5g"
+      },
+      {
+        "id": "ideo0njmd",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-09-19",
+        "trainerId": "t1",
+        "assignmentSeriesId": "id0awxqas"
+      },
+      {
+        "id": "idr8daibk",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-09-26",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idipk3zhw"
+      },
+      {
+        "id": "idylqg0hv",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-09-26",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id39o982o"
+      },
+      {
+        "id": "idg9gtm2x",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-09-26",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idzjxz3uc"
+      },
+      {
+        "id": "idlg8gg7n",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-09-27",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idbx6xbn7"
+      },
+      {
+        "id": "idv4ohxz2",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-09-27",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6z4fmj1"
+      },
+      {
+        "id": "idvztcmb8",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-09-26",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idm93tpdv"
+      },
+      {
+        "id": "idenk7lpl",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-09-26",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idoizf6yn"
+      },
+      {
+        "id": "id2ffhezp",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-09-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id8d3uimt"
+      },
+      {
+        "id": "id2h8jh7m",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-09-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idqo1w4tw"
+      },
+      {
+        "id": "idfuldne5",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-09-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idblc54hm"
+      },
+      {
+        "id": "id8yldtji",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-09-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "ido0ydhlp"
+      },
+      {
+        "id": "idiexdq6k",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-09-20",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "iddqbmq11"
+      },
+      {
+        "id": "idhs2gh5s",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-09-20",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idmll1bmq"
+      },
+      {
+        "id": "idktadvvz",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-09-12",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idfvlfq4m"
+      },
+      {
+        "id": "idu5iggy6",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-09-12",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6sdl7jv"
+      },
+      {
+        "id": "id24fv9v3",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-09-01",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idmulu224"
+      },
+      {
+        "id": "idwqkfrdq",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-09-02",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id5gqn37r"
+      },
+      {
+        "id": "idon5outk",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-09-02",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idyhgebor"
+      },
+      {
+        "id": "id1ebhzzd",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-09-02",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id2yg0rrf"
+      },
+      {
+        "id": "idz2cvga4",
+        "scheduleSlotId": "idqzdluob",
+        "date": "2026-09-02",
+        "trainerId": "id31rhalp",
+        "assignmentSeriesId": "idb1og8k9"
+      },
+      {
+        "id": "idsm2t1wa",
+        "scheduleSlotId": "idqzdluob",
+        "date": "2026-09-09",
+        "trainerId": "id31rhalp",
+        "assignmentSeriesId": "idyyfvcr1"
+      },
+      {
+        "id": "idhm7yq5u",
+        "scheduleSlotId": "idqzdluob",
+        "date": "2026-09-16",
+        "trainerId": "id31rhalp",
+        "assignmentSeriesId": "idlx9qlo7"
+      },
+      {
+        "id": "idch41abx",
+        "scheduleSlotId": "idqzdluob",
+        "date": "2026-09-23",
+        "trainerId": "id31rhalp",
+        "assignmentSeriesId": "ide3u232q"
+      },
+      {
+        "id": "idrnpr3jm",
+        "scheduleSlotId": "idqzdluob",
+        "date": "2026-09-30",
+        "trainerId": "id31rhalp",
+        "assignmentSeriesId": "id1q7v1zm"
+      },
+      {
+        "id": "idx37l18q",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-09-04",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idai4bmsv"
+      },
+      {
+        "id": "idpuncewh",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-09-03",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id84rtlut"
+      },
+      {
+        "id": "idrs34gmg",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-09-08",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id5z33nqx"
+      },
+      {
+        "id": "idxe5i8ig",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-09-10",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idahtyvzb"
+      },
+      {
+        "id": "ids47t8im",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-09-17",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idmvq7gsc"
+      },
+      {
+        "id": "idm49ws0m",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-09-24",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id59isuo0"
+      },
+      {
+        "id": "id61dfu16",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-09-25",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idkqp0cgm"
+      },
+      {
+        "id": "idlxa7h21",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-09-18",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idqxh6dx6"
+      },
+      {
+        "id": "idcpanx5j",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-09-11",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id8l4ubbh"
+      },
+      {
+        "id": "idok6lpj3",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-09-09",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idbyywzyt"
+      },
+      {
+        "id": "id5m2k7ql",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-09-09",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id1qucknm"
+      },
+      {
+        "id": "idpupbrb5",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-09-09",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idnt0axkq"
+      },
+      {
+        "id": "idiuecbjs",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-09-16",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idvxom1qz"
+      },
+      {
+        "id": "idrag6xot",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-09-16",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id80tg45p"
+      },
+      {
+        "id": "idveoxgo1",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-09-16",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idt4vzie3"
+      },
+      {
+        "id": "idsvsh5oq",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-09-14",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id79rjak9"
+      },
+      {
+        "id": "idyuw81pz",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-09-14",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idzs4he90"
+      },
+      {
+        "id": "idy3yoy9i",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-09-14",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idi75u9v6"
+      },
+      {
+        "id": "idi29xkzk",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-09-15",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idgllu8ab"
+      },
+      {
+        "id": "iduyyiizu",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-09-21",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idkwb53nz"
+      },
+      {
+        "id": "id77gi7t9",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-09-21",
+        "trainerId": "t2",
+        "assignmentSeriesId": "iddq9z5p7"
+      },
+      {
+        "id": "idjlvnkwk",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-09-21",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idil3fpwk"
+      },
+      {
+        "id": "id1zdhal6",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-09-22",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idpazm26c"
+      },
+      {
+        "id": "id2fsvtao",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-09-23",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6e2qsd9"
+      },
+      {
+        "id": "id83vs9p2",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-09-23",
+        "trainerId": "t2",
+        "assignmentSeriesId": "iddm67wuk"
+      },
+      {
+        "id": "idnvko7wr",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-09-23",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idwjwk6is"
+      },
+      {
+        "id": "idxp434c1",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-09-04",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id4sq6rmm"
+      },
+      {
+        "id": "id8p1d1aa",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-09-11",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id4sq6rmm"
+      },
+      {
+        "id": "idy0tn8av",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-09-18",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id4sq6rmm"
+      },
+      {
+        "id": "idj5ba3ee",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-09-25",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id4sq6rmm"
+      },
+      {
+        "id": "id8osaeyl",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-09-03",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id61z405v"
+      },
+      {
+        "id": "id4f0xie2",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-09-10",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id61z405v"
+      },
+      {
+        "id": "iduvrzqf6",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-09-17",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id61z405v"
+      },
+      {
+        "id": "id0wz9r2q",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-09-24",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id61z405v"
+      },
+      {
+        "id": "id7hdvgik",
+        "scheduleSlotId": "idfpsp432",
+        "date": "2026-09-01",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id2e7ohqh"
+      },
+      {
+        "id": "iddr920ih",
+        "scheduleSlotId": "idfpsp432",
+        "date": "2026-09-08",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id2e7ohqh"
+      },
+      {
+        "id": "idpysi0oz",
+        "scheduleSlotId": "idfpsp432",
+        "date": "2026-09-15",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id2e7ohqh"
+      },
+      {
+        "id": "idrh2ggfh",
+        "scheduleSlotId": "idfpsp432",
+        "date": "2026-09-22",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id2e7ohqh"
+      },
+      {
+        "id": "id2wg12ty",
+        "scheduleSlotId": "idfpsp432",
+        "date": "2026-09-29",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id2e7ohqh"
+      },
+      {
+        "id": "ids9vkraz",
+        "scheduleSlotId": "idi2v91wl",
+        "date": "2026-09-15",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idudhyme6"
+      },
+      {
+        "id": "id1d9y9wd",
+        "scheduleSlotId": "idj460jpy",
+        "date": "2026-09-15",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idbd8z0e1"
+      },
+      {
+        "id": "idw3r4bwg",
+        "scheduleSlotId": "idi2v91wl",
+        "date": "2026-09-22",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idpxiiwia"
+      },
+      {
+        "id": "iduc7yzz5",
+        "scheduleSlotId": "idj460jpy",
+        "date": "2026-09-22",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idg37tw0m"
+      },
+      {
+        "id": "idbl2as6p",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-09-28",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idhsl0x8k"
+      },
+      {
+        "id": "idghlnhqa",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-09-28",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id41jkejl"
+      },
+      {
+        "id": "id3y4drhy",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-09-28",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idktm96ic"
+      },
+      {
+        "id": "ideonb3fp",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-09-29",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idvq0uzln"
+      },
+      {
+        "id": "idlmr61dc",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-09-30",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id84sp7j1"
+      },
+      {
+        "id": "idoiu3gwt",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-09-30",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idynnpqxv"
+      },
+      {
+        "id": "idd93dz5i",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-09-30",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id193p6ql"
+      },
+      {
+        "id": "id4h1gr6b",
+        "scheduleSlotId": "id01ag3ev",
+        "date": "2026-09-01",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idj9eplaj"
+      },
+      {
+        "id": "idfdeojye",
+        "scheduleSlotId": "idn585zeo",
+        "date": "2026-09-01",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idrbiuocu"
+      },
+      {
+        "id": "idpmtlx1x",
+        "scheduleSlotId": "idqj2au32",
+        "date": "2026-09-14",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idqzpfuk8"
+      },
+      {
+        "id": "idv5myrto",
+        "scheduleSlotId": "id65ohs5s",
+        "date": "2026-09-14",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idknjj3rd"
+      },
+      {
+        "id": "idckp3cid",
+        "scheduleSlotId": "id54b69y9",
+        "date": "2026-09-14",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idk6ykq2w"
+      },
+      {
+        "id": "idln2vmdb",
+        "scheduleSlotId": "idugjzac5",
+        "date": "2026-09-16",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idbk01mk7"
+      },
+      {
+        "id": "idbbl73r2",
+        "scheduleSlotId": "idnssy94z",
+        "date": "2026-09-16",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id07cilmj"
+      },
+      {
+        "id": "idpj5ztr8",
+        "scheduleSlotId": "idygcl63o",
+        "date": "2026-09-16",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "iddgqm4g5"
+      },
+      {
+        "id": "id2dchm52",
+        "scheduleSlotId": "idygcl63o",
+        "date": "2026-09-23",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id1szmjz5"
+      },
+      {
+        "id": "idcqterth",
+        "scheduleSlotId": "idnssy94z",
+        "date": "2026-09-23",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id84uxyfz"
+      },
+      {
+        "id": "id4sy1byp",
+        "scheduleSlotId": "idugjzac5",
+        "date": "2026-09-23",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id0j6eups"
+      },
+      {
+        "id": "idkechi35",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-10-02",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "ids708vfv"
+      },
+      {
+        "id": "idh1hj59x",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-10-03",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "idutbcq66"
+      },
+      {
+        "id": "idah9obqp",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-10-03",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "idnvvldll"
+      },
+      {
+        "id": "idmccitp1",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-10-03",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "iduqnc8qk"
+      },
+      {
+        "id": "idycfb3hs",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-10-04",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idvsed42o"
+      },
+      {
+        "id": "idnpe155q",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-10-04",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idicd8o8f"
+      },
+      {
+        "id": "id4czupbf",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-10-03",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id4hu8stl"
+      },
+      {
+        "id": "id1jngk3g",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-10-03",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idtolx0yp"
+      },
+      {
+        "id": "idacjzio2",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-10-01",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id9tvk0iw"
+      },
+      {
+        "id": "id5t7xwux",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-10-08",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idq848xpk"
+      },
+      {
+        "id": "idwsorneu",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-10-15",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idq848xpk"
+      },
+      {
+        "id": "id6gtuqk6",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-10-22",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idq848xpk"
+      },
+      {
+        "id": "id8qjihwe",
+        "scheduleSlotId": "id1i4mar0",
+        "date": "2026-10-29",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idq848xpk"
+      },
+      {
+        "id": "id3v0ijqb",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-10-09",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id0u4v1rz"
+      },
+      {
+        "id": "id3053v7n",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-10-16",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id0u4v1rz"
+      },
+      {
+        "id": "id7kjxpca",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-10-23",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id0u4v1rz"
+      },
+      {
+        "id": "id3l0qkii",
+        "scheduleSlotId": "id7poe43p",
+        "date": "2026-10-30",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id0u4v1rz"
+      },
+      {
+        "id": "id8aobfqs",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-10-02",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idfc6bgt8"
+      },
+      {
+        "id": "idhmr09h6",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-10-09",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idfc6bgt8"
+      },
+      {
+        "id": "idzjzguzh",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-10-16",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idfc6bgt8"
+      },
+      {
+        "id": "idcd8simn",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-10-23",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idfc6bgt8"
+      },
+      {
+        "id": "idxzbngoc",
+        "scheduleSlotId": "idrjepyj6",
+        "date": "2026-10-30",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idfc6bgt8"
+      },
+      {
+        "id": "idoid8lbk",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-10-01",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id4blhajx"
+      },
+      {
+        "id": "idsmn3u0k",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-10-08",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id4blhajx"
+      },
+      {
+        "id": "id5sjcw78",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-10-15",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id4blhajx"
+      },
+      {
+        "id": "idq4fwfr6",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-10-22",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id4blhajx"
+      },
+      {
+        "id": "idnqq24bd",
+        "scheduleSlotId": "idhjvjx6s",
+        "date": "2026-10-29",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "id4blhajx"
+      },
+      {
+        "id": "idhtn8s7c",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-10-11",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idzrhz8f2"
+      },
+      {
+        "id": "id1c2batl",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-10-10",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "id68tm64s"
+      },
+      {
+        "id": "idotvoq68",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-10-10",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id9a60ik8"
+      },
+      {
+        "id": "id5do41hp",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-10-10",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id5s2ebu4"
+      },
+      {
+        "id": "id69krka1",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-10-10",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id2aluc6n"
+      },
+      {
+        "id": "idqj7z07c",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-10-10",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id2f9nt3w"
+      },
+      {
+        "id": "idnewvde7",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-10-11",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idz9qxhz5"
+      },
+      {
+        "id": "id2y1zjtk",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-10-17",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id18qq4ob"
+      },
+      {
+        "id": "idzbvaua3",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-10-17",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idfv1by2l"
+      },
+      {
+        "id": "id3cbvgzl",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-10-18",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "ide6kxe8i"
+      },
+      {
+        "id": "idxg94k4w",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-10-17",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "idba15h6x"
+      },
+      {
+        "id": "idv7bfot5",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-10-17",
+        "trainerId": "idd35eygj",
+        "assignmentSeriesId": "idygg0unf"
+      },
+      {
+        "id": "idy11iarr",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-10-17",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id76m3olk"
+      },
+      {
+        "id": "idzt8h89f",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-10-18",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id2jro1js"
+      },
+      {
+        "id": "id0ebi4te",
+        "scheduleSlotId": "idpc5d6w8",
+        "date": "2026-10-24",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idek8sgp5"
+      },
+      {
+        "id": "idtkvxoux",
+        "scheduleSlotId": "idl9axnpa",
+        "date": "2026-10-24",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idsbj5hxt"
+      },
+      {
+        "id": "idfiwpr7l",
+        "scheduleSlotId": "idv5pzeqq",
+        "date": "2026-10-24",
+        "trainerId": "t2",
+        "assignmentSeriesId": "ido5qf6iq"
+      },
+      {
+        "id": "idpj371a4",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-10-24",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "id6ptj8yh"
+      },
+      {
+        "id": "idklwtc3i",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-10-25",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "iddy7rf5d"
+      },
+      {
+        "id": "idc50hlze",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-10-25",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idq7nphfz"
+      },
+      {
+        "id": "idq5kc4zz",
+        "scheduleSlotId": "idhv0ymcv",
+        "date": "2026-10-24",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id1qmarc1"
+      },
+      {
+        "id": "id3i4djwy",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-10-05",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idiqx5smv"
+      },
+      {
+        "id": "ido2j435q",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-10-12",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idiqx5smv"
+      },
+      {
+        "id": "id8nmihs3",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-10-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idiqx5smv"
+      },
+      {
+        "id": "idt9ki2k5",
+        "scheduleSlotId": "idw27xdf7",
+        "date": "2026-10-26",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idiqx5smv"
+      },
+      {
+        "id": "id5b3p08i",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-10-05",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id9010z3w"
+      },
+      {
+        "id": "idoslilex",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-10-12",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id9010z3w"
+      },
+      {
+        "id": "idu1l3op1",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-10-19",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id9010z3w"
+      },
+      {
+        "id": "idlkur60c",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-10-26",
+        "trainerId": "t4",
+        "assignmentSeriesId": "id9010z3w"
+      },
+      {
+        "id": "id9aprsfu",
+        "scheduleSlotId": "idkco7k4m",
+        "date": "2026-10-05",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "ideuli8j3"
+      },
+      {
+        "id": "idtr1045b",
+        "scheduleSlotId": "idkco7k4m",
+        "date": "2026-10-12",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "ideuli8j3"
+      },
+      {
+        "id": "id81epapr",
+        "scheduleSlotId": "idkco7k4m",
+        "date": "2026-10-19",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "ideuli8j3"
+      },
+      {
+        "id": "idg4jmbpe",
+        "scheduleSlotId": "idkco7k4m",
+        "date": "2026-10-26",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "ideuli8j3"
+      },
+      {
+        "id": "idv13yhot",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-10-05",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idewazrk7"
+      },
+      {
+        "id": "id93nm6y9",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-10-12",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idewazrk7"
+      },
+      {
+        "id": "idzskpdcw",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-10-19",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idewazrk7"
+      },
+      {
+        "id": "idhl7fr9u",
+        "scheduleSlotId": "idk5w85oy",
+        "date": "2026-10-26",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idewazrk7"
+      },
+      {
+        "id": "idqg5msg3",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-10-05",
+        "trainerId": "t2",
+        "assignmentSeriesId": "iddpts24s"
+      },
+      {
+        "id": "idtre85hk",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-10-12",
+        "trainerId": "t2",
+        "assignmentSeriesId": "iddpts24s"
+      },
+      {
+        "id": "id0m3rh16",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-10-19",
+        "trainerId": "t2",
+        "assignmentSeriesId": "iddpts24s"
+      },
+      {
+        "id": "idv9008rr",
+        "scheduleSlotId": "idjrr8svj",
+        "date": "2026-10-26",
+        "trainerId": "t2",
+        "assignmentSeriesId": "iddpts24s"
+      },
+      {
+        "id": "idez4th84",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-10-06",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idacsuoo8"
+      },
+      {
+        "id": "idvlk04ws",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-10-13",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idacsuoo8"
+      },
+      {
+        "id": "ideqore9d",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-10-20",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idacsuoo8"
+      },
+      {
+        "id": "idymc5jjz",
+        "scheduleSlotId": "id8dpr3b7",
+        "date": "2026-10-27",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idacsuoo8"
+      },
+      {
+        "id": "idec7okus",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-10-07",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6g9z1ks"
+      },
+      {
+        "id": "idsv5675x",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-10-14",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6g9z1ks"
+      },
+      {
+        "id": "idg8adwsz",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-10-21",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6g9z1ks"
+      },
+      {
+        "id": "idey1lm21",
+        "scheduleSlotId": "id69soskc",
+        "date": "2026-10-28",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6g9z1ks"
+      },
+      {
+        "id": "id1dojtp7",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-10-07",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idmznsrel"
+      },
+      {
+        "id": "idmkidzc7",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-10-14",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idmznsrel"
+      },
+      {
+        "id": "idkovkc1h",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-10-21",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idmznsrel"
+      },
+      {
+        "id": "idmq68pdq",
+        "scheduleSlotId": "idegbcce3",
+        "date": "2026-10-28",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idmznsrel"
+      },
+      {
+        "id": "idq27k6oa",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-10-07",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6w9at6l"
+      },
+      {
+        "id": "ideaekf0z",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-10-14",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6w9at6l"
+      },
+      {
+        "id": "idinrkgt4",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-10-21",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6w9at6l"
+      },
+      {
+        "id": "idp8k87cd",
+        "scheduleSlotId": "id2jgrlpt",
+        "date": "2026-10-28",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id6w9at6l"
+      },
+      {
+        "id": "idkhz88l0",
+        "scheduleSlotId": "idqj2au32",
+        "date": "2026-10-12",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idtkkmo1x"
+      },
+      {
+        "id": "idvpomr5a",
+        "scheduleSlotId": "id65ohs5s",
+        "date": "2026-10-12",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id07yjugz"
+      },
+      {
+        "id": "idkcthi56",
+        "scheduleSlotId": "id54b69y9",
+        "date": "2026-10-12",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id34sxknp"
+      },
+      {
+        "id": "idpzo7w56",
+        "scheduleSlotId": "idqj2au32",
+        "date": "2026-10-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "id6bzjnf0"
+      },
+      {
+        "id": "idr3u0762",
+        "scheduleSlotId": "id65ohs5s",
+        "date": "2026-10-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idi5f9yfx"
+      },
+      {
+        "id": "id3cwsks3",
+        "scheduleSlotId": "id54b69y9",
+        "date": "2026-10-19",
+        "trainerId": "id5mmyzmu",
+        "assignmentSeriesId": "idw3oqy3m"
+      },
+      {
+        "id": "id4lqti97",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-09-14",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idwofwmqo"
+      },
+      {
+        "id": "id4xubdez",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-09-21",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idwofwmqo"
+      },
+      {
+        "id": "id2ua6lr7",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-09-28",
+        "trainerId": "t4",
+        "assignmentSeriesId": "idwofwmqo"
+      },
+      {
+        "id": "id620sakh",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-09-14",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idyfct2hb"
+      },
+      {
+        "id": "idxenwrlk",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-09-21",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idyfct2hb"
+      },
+      {
+        "id": "idkx1qz2q",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-09-28",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idyfct2hb"
+      },
+      {
+        "id": "id3zdjn3b",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-09-07",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idyldf243"
+      },
+      {
+        "id": "id04mdp33",
+        "scheduleSlotId": "id4p3jslb",
+        "date": "2026-09-07",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idk0xguts"
+      },
+      {
+        "id": "idml736ef",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-10-05",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id7pas831"
+      },
+      {
+        "id": "idq0rzm1r",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-10-12",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id7pas831"
+      },
+      {
+        "id": "idmizyjhv",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-10-19",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id7pas831"
+      },
+      {
+        "id": "ider45koo",
+        "scheduleSlotId": "idlliwo3d",
+        "date": "2026-10-26",
+        "trainerId": "t2",
+        "assignmentSeriesId": "id7pas831"
       }
     ]
   }
