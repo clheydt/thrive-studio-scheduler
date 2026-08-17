@@ -4,7 +4,7 @@
     "name": "Maternity Schedule",
     "color": "#16a34a",
     "isMaster": false,
-    "savedAt": "2026-08-17T15:26:26.336Z"
+    "savedAt": "2026-08-17T15:52:15.215Z"
   },
   "data": {
     "trainers": [
@@ -58765,20 +58765,6 @@
         "assignmentSeriesId": "idzjxz3uc"
       },
       {
-        "id": "idlg8gg7n",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-09-27",
-        "trainerId": "idbqxocdw",
-        "assignmentSeriesId": "idbx6xbn7"
-      },
-      {
-        "id": "idv4ohxz2",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-09-27",
-        "trainerId": "t2",
-        "assignmentSeriesId": "id6z4fmj1"
-      },
-      {
         "id": "idvztcmb8",
         "scheduleSlotId": "idl9axnpa",
         "date": "2026-09-26",
@@ -58800,13 +58786,6 @@
         "assignmentSeriesId": "id8d3uimt"
       },
       {
-        "id": "id2h8jh7m",
-        "scheduleSlotId": "idauh30xa",
-        "date": "2026-09-19",
-        "trainerId": "id5mmyzmu",
-        "assignmentSeriesId": "idqo1w4tw"
-      },
-      {
         "id": "idfuldne5",
         "scheduleSlotId": "idpc5d6w8",
         "date": "2026-09-19",
@@ -58819,20 +58798,6 @@
         "date": "2026-09-19",
         "trainerId": "id5mmyzmu",
         "assignmentSeriesId": "ido0ydhlp"
-      },
-      {
-        "id": "idiexdq6k",
-        "scheduleSlotId": "idyoan863",
-        "date": "2026-09-20",
-        "trainerId": "id5mmyzmu",
-        "assignmentSeriesId": "iddqbmq11"
-      },
-      {
-        "id": "idhs2gh5s",
-        "scheduleSlotId": "id6uud1do",
-        "date": "2026-09-20",
-        "trainerId": "idbqxocdw",
-        "assignmentSeriesId": "idmll1bmq"
       },
       {
         "id": "idktadvvz",
@@ -60170,6 +60135,41 @@
         "date": "2026-09-14",
         "trainerId": "id5mmyzmu",
         "assignmentSeriesId": "iddvsl64k"
+      },
+      {
+        "id": "idtn72dp2",
+        "scheduleSlotId": "idauh30xa",
+        "date": "2026-09-19",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "id5eo9rxz"
+      },
+      {
+        "id": "idsjpf5cp",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-09-20",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idr0lxked"
+      },
+      {
+        "id": "idzarz1zr",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-09-20",
+        "trainerId": "t1",
+        "assignmentSeriesId": "id63z93va"
+      },
+      {
+        "id": "iddp25f2i",
+        "scheduleSlotId": "idyoan863",
+        "date": "2026-09-27",
+        "trainerId": "idbqxocdw",
+        "assignmentSeriesId": "idz1qiolp"
+      },
+      {
+        "id": "idp03fvvd",
+        "scheduleSlotId": "id6uud1do",
+        "date": "2026-09-27",
+        "trainerId": "t2",
+        "assignmentSeriesId": "idkj0mw3q"
       }
     ]
   }
