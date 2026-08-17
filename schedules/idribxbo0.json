@@ -4,7 +4,7 @@
     "name": "Maternity Schedule",
     "color": "#16a34a",
     "isMaster": false,
-    "savedAt": "2026-08-17T17:00:09.249Z"
+    "savedAt": "2026-08-17T17:27:46.319Z"
   },
   "data": {
     "trainers": [
@@ -12330,27 +12330,6 @@
         "id": "id85f3nev",
         "scheduleSlotId": "idhjbhwwq",
         "date": "2026-09-08",
-        "trainerId": "t3",
-        "assignmentSeriesId": "id5nob0mt"
-      },
-      {
-        "id": "idgrod69y",
-        "scheduleSlotId": "idhjbhwwq",
-        "date": "2026-09-15",
-        "trainerId": "t3",
-        "assignmentSeriesId": "id5nob0mt"
-      },
-      {
-        "id": "idihgcugo",
-        "scheduleSlotId": "idhjbhwwq",
-        "date": "2026-09-22",
-        "trainerId": "t3",
-        "assignmentSeriesId": "id5nob0mt"
-      },
-      {
-        "id": "idjbf6m9s",
-        "scheduleSlotId": "idhjbhwwq",
-        "date": "2026-09-29",
         "trainerId": "t3",
         "assignmentSeriesId": "id5nob0mt"
       },
@@ -34429,20 +34408,6 @@
         "id": "id270pb2p",
         "scheduleSlotId": "idskndbqz",
         "date": "2026-09-10",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idptd98tr"
-      },
-      {
-        "id": "idkti32lz",
-        "scheduleSlotId": "idskndbqz",
-        "date": "2026-09-17",
-        "trainerId": "t3",
-        "assignmentSeriesId": "idptd98tr"
-      },
-      {
-        "id": "id6qjf9f7",
-        "scheduleSlotId": "idskndbqz",
-        "date": "2026-09-24",
         "trainerId": "t3",
         "assignmentSeriesId": "idptd98tr"
       },
@@ -60233,6 +60198,41 @@
         "date": "2027-12-27",
         "trainerId": "idbqxocdw",
         "assignmentSeriesId": "id79s04nf"
+      },
+      {
+        "id": "idian6ypa",
+        "scheduleSlotId": "idhjbhwwq",
+        "date": "2026-09-15",
+        "trainerId": "t1",
+        "assignmentSeriesId": "ida2r51qg"
+      },
+      {
+        "id": "id86r98yt",
+        "scheduleSlotId": "idhjbhwwq",
+        "date": "2026-09-22",
+        "trainerId": "t1",
+        "assignmentSeriesId": "ida2r51qg"
+      },
+      {
+        "id": "idoiey752",
+        "scheduleSlotId": "idhjbhwwq",
+        "date": "2026-09-29",
+        "trainerId": "t1",
+        "assignmentSeriesId": "ida2r51qg"
+      },
+      {
+        "id": "idhkwjsc8",
+        "scheduleSlotId": "idskndbqz",
+        "date": "2026-09-17",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idca8aeyn"
+      },
+      {
+        "id": "id6nv0jz1",
+        "scheduleSlotId": "idskndbqz",
+        "date": "2026-09-24",
+        "trainerId": "t1",
+        "assignmentSeriesId": "idca8aeyn"
       }
     ]
   }
