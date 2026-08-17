@@ -4,19 +4,19 @@
     "name": "Maternity Schedule",
     "color": "#16a34a",
     "isMaster": false,
-    "savedAt": "2026-08-13T14:18:28.810Z"
+    "savedAt": "2026-08-17T15:26:26.336Z"
   },
   "data": {
     "trainers": [
       {
         "id": "t1",
         "name": "Ashley Mentzer",
-        "color": "#ecefef"
+        "color": "#0edddd"
       },
       {
         "id": "t2",
         "name": "Erin Dugan",
-        "color": "#75efff"
+        "color": "#c7c7c7"
       },
       {
         "id": "t3",
@@ -61,7 +61,7 @@
       {
         "id": "id31rhalp",
         "name": "Chelsea - Open Gym",
-        "color": "#888888"
+        "color": "#c7c7c7"
       }
     ],
     "classTypes": [
